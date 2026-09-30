@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f7f3">
+  <title>WattDialogue · Household electricity</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#question">Skip to ask a question</a>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">W</span><div><span class="brand-name">WattDialogue</span><span class="brand-detail">Household electricity, in everyday words</span></div></div>
+      <div class="header-meta"><span class="utility-label">Utility-provided display concept</span><span class="mode-badge" id="mode-badge"><span class="status-dot" aria-hidden="true"></span>Local mode</span></div>
+    </header>
+
+    <div class="recording-notice"><span class="notice-icon" aria-hidden="true">↺</span><p id="data-source-notice"><strong>Loading demo evidence.</strong> This prototype is not connected to a live meter.</p></div>
+
+    <main class="workspace">
+      <aside class="home-panel" aria-labelledby="home-heading">
+        <div class="eyebrow">Your electricity overview</div>
+        <h2 id="home-heading">A closer look at home</h2>
+        <label class="field-label" id="home-select-label" for="home-select">Demo household</label>
+        <select id="home-select"><option value="R1Hz">Demo home 1</option><option value="AMPds2">Demo home 2</option></select>
+        <label class="field-label block-label" id="block-select-label" for="block-select">Demo period</label>
+        <select id="block-select" disabled><option value="">Loading periods…</option></select>
+        <p class="boundary-note" id="boundary">Checking the meter boundary…</p>
+
+        <div class="energy-total"><span class="total-label" id="total-label">Electricity total</span><div><strong id="total-energy">—</strong><span class="total-unit">kWh</span></div><p id="recording-range">Loading the selected period…</p></div>
+        <div class="quality-row"><span>Data coverage</span><strong id="coverage">—</strong></div>
+        <p class="freshness-note" id="summary-freshness">Waiting for evidence and its source.</p>
+        <div class="divider"></div>
+        <div class="section-label"><h3>Estimated loads</h3><span class="source-chip estimate" id="estimate-source-chip">Estimates</span></div>
+        <p class="small-copy">One appliance may appear as several loads, or a load may combine activity. Load numbers are not appliance counts. Names need confirmation.</p>
+        <ol class="load-list" id="load-list"><li class="empty-state">Estimates will appear here.</li></ol>
+        <p class="residual-note" id="residual"></p>
+        <div class="panel-message" id="summary-warning" role="status" hidden></div>
+      </aside>
+
+      <section class="conversation-panel" aria-labelledby="conversation-heading">
+        <div class="intro"><div class="eyebrow">Let's make sense of it</div><h1 id="conversation-heading">What would you like<br class="wide-break"> to understand?</h1><p id="intro-copy">Explore electricity use, estimated loads, and the limits of this demonstration.</p></div>
+        <div class="suggested-questions" aria-label="Questions to get started">
+          <button type="button" data-question="Which estimated load used the most electricity in this recording?"><span aria-hidden="true">↗</span>What used the most?</button>
+          <button type="button" data-question="How does estimated appliance electricity compare with the measured total for this recording?"><span aria-hidden="true">≋</span>Explain the household total</button>
+          <button type="button" data-question="How complete is the electricity data in this recording, and what remains uncertain?"><span aria-hidden="true">◎</span>What is still uncertain?</button>
+          <button type="button" data-question="Can you help identify an unlabelled load in this recording? Show candidates only when evidence supports them."><span aria-hidden="true">⌁</span>Help name an appliance</button>
+        </div>
+
+        <section class="answer-card" id="answer-card" aria-labelledby="answer-title" hidden>
+          <div class="answer-heading"><span class="answer-mark" aria-hidden="true">W</span><div><h2 id="answer-title">Here's what the evidence tells us</h2><span id="answer-mode" class="small-copy">Local explanation</span></div></div>
+          <p id="answer-source-note" class="small-copy"></p>
+          <p id="asked-question" class="asked-question"></p>
+          <div id="answer-text" class="answer-text"></div>
+          <div class="answer-fields" id="answer-fields"></div>
+          <div id="answer-warnings" class="answer-warnings"></div>
+          <div id="label-candidates" class="label-candidates"></div>
+          <details class="evidence-details" id="evidence-details"><summary>See the evidence and its limits</summary><div id="answer-freshness" class="small-copy"></div><ul id="evidence-list"></ul></details>
+        </section>
+        <div class="connection-message" id="connection-message" role="status" hidden></div>
+
+        <form class="question-form" id="question-form">
+          <label class="field-label" for="question">Your question</label>
+          <div class="question-input-wrap"><textarea id="question" rows="2" maxlength="2000" placeholder="For example: Which estimated load used the most electricity?" aria-describedby="question-help"></textarea><button class="ask-button" id="ask-button" type="submit">Ask <span aria-hidden="true">→</span></button></div>
+          <p class="small-copy" id="question-help">Type a question or choose one above. Voice input is planned for a future display.</p>
+        </form>
+        <div id="activity-status" class="sr-only" role="status" aria-live="polite"></div>
+
+        <section class="privacy-panel" aria-labelledby="privacy-heading">
+          <div><h2 id="privacy-heading">You choose how to ask</h2><p>Local explanations use available evidence without sending a question to an AI service.</p></div>
+          <button type="button" class="secondary-button" id="cloud-settings-button" aria-expanded="false" aria-controls="cloud-settings">AI settings <span aria-hidden="true">⌄</span></button>
+          <div id="cloud-settings" class="cloud-settings" hidden>
+            <label class="consent-control"><input id="cloud-consent" type="checkbox" disabled><span><strong>Use cloud AI for this session</strong><span>Send my questions and the relevant energy summaries to OpenAI. Local explanations remain available when this is off.</span></span></label>
+            <p id="api-availability" class="small-copy">Checking whether the server has AI access…</p>
+            <p class="small-copy">This proposed utility service supplies the display, connection and AI access. Residents do not need a personal phone, computer, Internet subscription or paid AI account. This prototype demonstrates the interface; it is not a utility deployment.</p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer class="app-footer"><span id="footer-source">The source of displayed values is identified with the evidence.</span><span>Research prototype · No appliance control</span></footer>
+  </div>
+
+  <dialog id="label-dialog" aria-labelledby="label-dialog-title" aria-describedby="label-dialog-help">
+    <form id="label-form">
+      <div class="dialog-top"><span class="eyebrow">Appliance name</span><button class="icon-button" type="button" id="close-label-dialog" aria-label="Close appliance naming">×</button></div>
+      <h2 id="label-dialog-title">Annotate this load</h2><p id="label-dialog-help">A suggested name is a possibility. This prototype records a demo annotation, not independently verified appliance identity.</p>
+      <p class="dialog-load" id="dialog-load"></p>
+      <label class="field-label" for="appliance-name">Appliance name</label><input type="text" id="appliance-name" maxlength="80" required placeholder="Enter an appliance name">
+      <label class="confirm-control"><input type="checkbox" id="label-confirmation" required><span id="label-annotation-text">Record this name as a demo annotation.</span></label>
+      <p id="label-error" class="error-message" role="alert" hidden></p><button type="submit" id="save-label-button" class="primary-button">Record demo name</button><p class="small-copy">The annotation is kept separately from the component estimates. It does not independently verify appliance identity.</p>
+    </form>
+  </dialog>
+</body>
+</html>

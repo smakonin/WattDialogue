@@ -1,0 +1,14 @@
+{
+  "description": "Declared synthetic unit-test fixture; these values are not experimental findings.",
+  "recording": "demo_60s",
+  "cadence_seconds": 60,
+  "timestamps": [0, 60, 180],
+  "aggregate_w": [3600, 7200, 3600],
+  "component_000_w": [1800, 9000, 1800],
+  "other_component_slots_w": 0,
+  "expected": {
+    "full_window": {"start": 0, "end": 240, "as_of": 240, "energy_kwh": 0.24, "coverage_fraction": 0.75, "average_power_w": 4800, "peak_power_w": 7200, "component_000_energy_kwh": 0.21, "signed_residual_energy_kwh": 0.03, "unexplained_energy_kwh": 0.06, "overallocated_energy_kwh": 0.03},
+    "clipped_window": {"start": 30, "end": 90, "as_of": 120, "energy_kwh": 0.09, "coverage_fraction": 1.0},
+    "not_completed": {"start": 60, "end": 90, "as_of": 90, "energy_kwh": null, "coverage_fraction": 0.0}
+  }
+}

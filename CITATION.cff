@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use WattDialogue, cite this software and the accompanying paper when published."
+title: "WattDialogue: A Conversational Bridge from Unsupervised NILM to Household Energy Understanding"
+type: software
+authors:
+  - family-names: Makonin
+    given-names: Stephen
+version: 0.1.0
+repository-code: "https://github.com/smakonin/WattDialogue"
+license: GPL-3.0-only

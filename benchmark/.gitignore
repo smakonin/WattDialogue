@@ -1,0 +1,13 @@
+# Generated benchmark content may contain private household observations.
+# The public repository contains code and explicitly manual synthetic fixtures.
+/questions.jsonl
+/dev_questions.jsonl
+/protocol.json
+/manifest.json
+/private/
+/runs/
+/generated/
+/synthetic_sources/
+/results/
+__pycache__/
+*.py[cod]

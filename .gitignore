@@ -1,0 +1,36 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+runtime/
+benchmark/results/
+
+# Research inputs, generated scoring targets and local replay exports.
+data/
+datasets/
+replay-data/
+private-data/
+*.npz
+*.npy
+*.csv
+benchmark/private/
+benchmark/runs/
+benchmark/questions.jsonl
+benchmark/dev_questions.jsonl
+benchmark/protocol.json
+benchmark/manifest.json
+
+# Credential files and local machines.
+*credentials*.json
+*.pem
+*.key
+.DS_Store
+.idea/
+.vscode/
+.coverage
+htmlcov/
+
+# Local research notes are kept outside the publication export.
+PRIVATE_*.md
