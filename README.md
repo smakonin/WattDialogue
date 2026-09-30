@@ -83,6 +83,26 @@ The default suite uses synthetic fixtures and makes no paid API calls. Optional 
 
 The runnable demo makes the interface inspectable. It does not establish physical appliance accuracy, occupant comprehension, utility access or energy savings. Those results require separate evaluation. The public launch checklist is in [docs/RELEASE_CHECKLIST.md](docs/RELEASE_CHECKLIST.md).
 
+## Model evaluation
+
+The [benchmark guide](benchmark/README.md#run-a-frozen-model-evaluation) documents a
+resumable paid evaluation runner comparing the deterministic template, production
+WattDialogue and GPT arithmetic from precomputed minute-bin electrical features.
+It freezes source, code, prompts, schemas, model settings and prior case exposure
+before requests. Raw model responses and delivered fallback answers remain separate.
+The arithmetic condition changes numerical processing and evidence orchestration;
+it is not GPT reading untouched native traces.
+
+Use explicitly authorised replay inputs, a source profile, an existing private
+configuration and an output directory outside this repository. `--freeze-only`
+prepares the execution without API requests. The default model is the fixed
+`gpt-5.4-mini-2026-03-17` snapshot; three repeats, a USD 20 conservative cost limit
+and a separate HTTP request cap apply. Project rate limits still apply, and the
+runner does not automatically retry rate-limit failures. Numerical fidelity,
+model completion, fallback use and author-reviewed prose findings must be reported
+separately. No generated results, household data or participant records belong in
+Git. The no-key test suite does not run this paid evaluation.
+
 ## License and citation
 
 The source code is licensed under the **GNU General Public License, version 3** (`GPL-3.0-only`); see [LICENSE](LICENSE). Dataset permissions are separate. [CITATION.cff](CITATION.cff) supplies the software citation; cite the accompanying paper once published.

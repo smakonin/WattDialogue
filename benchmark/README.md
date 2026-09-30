@@ -155,11 +155,89 @@ and provenance are checked separately. Prose checks are incomplete screening;
 The optional reference-association helper does not perform matching, establish
 physical appliance identity, or supply label-accuracy evidence.
 
+## Run a frozen model evaluation
+
+`run_model_evaluation.py` executes three explicitly different conditions: the
+unchanged local template, the production tool-grounded service, and GPT arithmetic
+from minute-bin electrical summaries without runtime integration tools. It requires
+an explicitly supplied replay source, source profile, generated questions and
+private targets. The production adapter currently supports its declared R1Hz and
+AMPds2 block identifiers, native cadences, boundaries and online model version;
+the generic generator profile above does not extend that adapter to new recordings.
+
+Prepare a separate benchmark directory using the private replay generation command
+above. Use development questions for transport checks before freezing a formal run.
+Keep all source recordings, generated questions, oracle targets, manifests, registries,
+responses and review sheets **outside the repository**. The runner rejects an output
+path inside this checkout. Use an existing private configuration directly; never copy
+credentials into an evaluation output or fill and commit the key template.
+
+The following command saves the execution freeze without making a model request:
+
+```sh
+python3 benchmark/run_model_evaluation.py \
+  --questions /path/to/private-benchmark/questions.jsonl \
+  --expected /path/to/private-benchmark/private/expected.jsonl \
+  --manifest /path/to/private-benchmark/manifest.json \
+  --source-root /path/to/authorised-replay/runs \
+  --source-profile /path/to/source-profile.json \
+  --output /path/outside/repository/frozen-evaluation \
+  --env-file /path/to/private/config.env \
+  --case-exposure "Describe all previous development and test exposure honestly" \
+  --freeze-only
+```
+
+Remove `--freeze-only` to run the same frozen configuration. That action sends
+questions and allowed replay evidence to the OpenAI API; it should use recordings
+whose intended processing is authorised. Reference appliance measurements, mappings,
+private oracle targets and existing label annotations are excluded. Source hashes,
+code, prompts, schemas, model settings and the exposure declaration must match on
+resume. A changed configuration or implementation requires a new run directory.
+Exercised questions are not an untouched holdout, even if their files are regenerated.
+
+Defaults are the fixed `gpt-5.4-mini-2026-03-17` snapshot, reasoning effort `none`,
+1,800 output tokens per request, three generations per model condition, four workers,
+1,800 total HTTP requests and a conservative USD 20 cost cap. The template runs
+once per case. `--workers 1` reduces concurrency for projects with small token-rate
+limits. The runner has no automatic rate-limit retry or adaptive request pacing;
+check the project's rate limits before scheduling large evidence requests. Failed
+or incomplete requests are retained. A quota-only backup-key attempt is recorded
+and counts against the same limits; rate-limit or authentication failures do not
+switch keys. The interactive demo's smaller call limit is unchanged.
+
+The cost ledger reserves an upper bound before each request and uses reported
+input, cached-input and output token counts afterwards. Its frozen standard prices
+are USD 0.75, USD 0.075 and USD 4.50 per million tokens respectively, checked on
+30 September 2026 against the [official model documentation](https://developers.openai.com/api/docs/models/gpt-5.4-mini).
+Costs are estimates, not account invoices. Requests with uncertain usage retain a
+conservative reservation. `store:false` does not establish zero provider retention.
+Do not put newly collected participant information through this research runner.
+
+Outputs include an immutable execution freeze, durable case and request journals,
+verbatim model outputs, delivered responses, separate raw/delivered automated scores,
+a token/cost ledger and a manual review worksheet. A service fallback remains a local
+delivered outcome; it is never counted as a successful model answer. The runner can
+resume recorded work without repeating finished or potentially paid interrupted
+cases. `--stop-after` creates a bounded checkpoint; it counts new case records,
+including template cases. Author review is required before publishing factuality,
+identity or comfort findings.
+
+The minute-bin condition supplies clipped durations, separate finite meter/component
+coverage, duration-weighted mean and peak meter power, sparse component means and
+positive/negative residual features. It contains numerical preprocessing and loses
+sub-minute timing. This comparison changes arithmetic and evidence orchestration;
+it does not isolate language ability or compare GPT against untouched raw traces.
+Numeric fields in the grounded condition come from software tools, including fields
+in local fallback answers. Their fidelity must not be called independent GPT arithmetic
+accuracy. Raw grounded output also lacks the service's structured comfort-constraint
+echo by schema; its corresponding raw score is a diagnostic rather than participant
+or independently adjudicated comfort evidence.
+
 ## Repository export boundary
 
-Commit only `generate.py`, `oracle.py`, `score.py`, `README.md`, `.gitignore`, and
-`fixtures/interval_cases.json` from this folder, plus `tests/test_benchmark.py`.
-The generated JSONL, protocol/manifests, private targets, sources, and run outputs
-are excluded. `.gitignore` supports that boundary but an explicit file allowlist
-is the final protection when creating an export. Preserved private research
-products are not examples or assets for a public release.
+Commit only the reusable generator, oracle, scorer, model runner, README, ignore rules
+and manual synthetic fixtures from this folder, plus their no-key tests. Generated
+JSONL, protocol/manifests, private targets, source archives and run outputs are
+excluded. `.gitignore` supports that boundary but an explicit file allowlist is the
+final protection when creating an export. Preserved private research products are
+not examples or assets for a public release.
