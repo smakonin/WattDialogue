@@ -10,6 +10,7 @@ from hashlib import sha256
 from pathlib import Path
 from typing import Any
 import math
+import threading
 
 import numpy as np
 
@@ -198,6 +199,7 @@ class ReplayStore:
         if self.root is not None and (self.root / "runs").is_dir():
             self.root = self.root / "runs"
         self._cache: OrderedDict[tuple, ReplayDataset] = OrderedDict()
+        self._cache_lock = threading.RLock()
 
     @property
     def model_version(self) -> str:
@@ -216,7 +218,21 @@ class ReplayStore:
             raise ValueError("recording must be R1Hz or AMPds2")
         return {k: list(v) for k, v in BLOCKS.items() if recording is None or recording == k}
 
+    def snapshot(self, recording, block_id):
+        """Frozen replay files never change during a run; this store is its view.
+
+        A mutable adapter must return an immutable view covering both estimate
+        modes, metadata and model version, captured atomically before query work.
+        """
+        return self
+
     def load(self, recording: str, block_id: int | str, mode: str = "online") -> ReplayDataset:
+        # An eviction must not interleave a cache hit, LRU update and return.
+        # Miss construction is serialized to avoid duplicate large allocations.
+        with self._cache_lock:
+            return self._load(recording, block_id, mode)
+
+    def _load(self, recording: str, block_id: int | str, mode: str = "online") -> ReplayDataset:
         if not isinstance(recording, str) or recording not in BLOCKS:
             raise ValueError("recording must be R1Hz or AMPds2")
         if isinstance(block_id, bool) or not str(block_id).isdigit():

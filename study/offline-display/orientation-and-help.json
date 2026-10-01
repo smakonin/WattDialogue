@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "status": "INVENTED REVIEW MATERIALS; not approved or issued",
+  "practice_cards": [
+    {
+      "id": "P1",
+      "fictional": true,
+      "status": "REVIEW; PI approval pending",
+      "title": "Find a value in an invented example",
+      "facts": [
+        {
+          "label": "Illustrative energy value",
+          "text": "1.50 kWh"
+        },
+        {
+          "label": "Relative example period",
+          "text": "3 hours; no actual date or home"
+        },
+        {
+          "label": "Source and status",
+          "text": "Invented orientation illustration; measurement provenance is not supplied."
+        }
+      ],
+      "prompt": "What energy value is shown? Enter the number and unit; this practice is not scored.",
+      "questions": [
+        {
+          "id": "primary",
+          "label": "What energy value is shown?",
+          "response": "The invented illustration shows 1.50 kWh for a relative 3-hour period."
+        },
+        {
+          "id": "followup1",
+          "label": "How long is the example period?",
+          "response": "The relative period is 3 hours. No actual date is provided."
+        },
+        {
+          "id": "followup2",
+          "label": "Is this my household?",
+          "response": "No. This is a separate invented orientation illustration, not a real home or NILM identity result."
+        }
+      ],
+      "feedback": "The illustrated value is 1.50 kWh. In either format, the same value appears in the evidence table. This answer is not scored or retained."
+    },
+    {
+      "id": "P2",
+      "fictional": true,
+      "status": "REVIEW; PI approval pending",
+      "title": "Find a value in an invented example",
+      "facts": [
+        {
+          "label": "Illustrative energy value",
+          "text": "2.00 kWh"
+        },
+        {
+          "label": "Relative example period",
+          "text": "4 hours; no actual date or home"
+        },
+        {
+          "label": "Source and status",
+          "text": "Invented orientation illustration; measurement provenance is not supplied."
+        }
+      ],
+      "prompt": "What energy value is shown? Enter the number and unit; this practice is not scored.",
+      "questions": [
+        {
+          "id": "primary",
+          "label": "What energy value is shown?",
+          "response": "The invented illustration shows 2.00 kWh for a relative 4-hour period."
+        },
+        {
+          "id": "followup1",
+          "label": "How long is the example period?",
+          "response": "The relative period is 4 hours. No actual date is provided."
+        },
+        {
+          "id": "followup2",
+          "label": "Is this my household?",
+          "response": "No. This is a separate invented orientation illustration, not a real home or NILM identity result."
+        }
+      ],
+      "feedback": "The illustrated value is 2.00 kWh. In either format, the same value appears in the evidence table. This answer is not scored or retained."
+    }
+  ],
+  "practice_assignment": "P1 before the first format; P2 before the second, regardless of condition order",
+  "practice_retention": "No practice answer or correctness retained; completion/skip and relative events only",
+  "help_levels": {
+    "1": "Repeat task/input instructions",
+    "2": "Navigation guidance",
+    "3": "Locate evidence",
+    "4": "Show prepared energy explanation"
+  },
+  "help_cards": {
+    "A1": {
+      "1": "Which estimated load used most? Is its value directly metered? Enter a short answer in the answer box. Hold the answer to give confidence, or choose Skip task, Pause, or Exit and discard.",
+      "2": "The evidence table precedes the answer form. In dialogue, question buttons open prepared explanations; in the dashboard, explanations follow the evidence table. Both show the same underlying information.",
+      "3": "Look at the component-estimate rows and the separate aggregate meter total, then the label status and uncertainty. The aggregate and component values describe different evidence types.",
+      "4": "Load 7, occupant-named dryer, has the largest component estimate: 4.80 kWh. That component value is estimated, not directly metered. The 9.20 kWh whole-home meter total is the directly measured aggregate."
+    },
+    "A2": {
+      "1": "Did use rise or fall, and by how many kWh? Enter a short answer in the answer box. Hold the answer to give confidence, or choose Skip task, Pause, or Exit and discard.",
+      "2": "The evidence table precedes the answer form. In dialogue, question buttons open prepared explanations; in the dashboard, explanations follow the evidence table. Both show the same underlying information.",
+      "3": "Look at the earlier and later energy values and their complete, comparable 24-hour windows. Measurement provenance is not supplied.",
+      "4": "Use rose by 1.20 kWh: 6.00 minus 4.80 kWh. Both windows are complete and cover 24 hours. These values show a change, but do not identify its cause."
+    },
+    "A3": {
+      "1": "Can it be called the refrigerator with certainty? What further information would help? Enter a short answer in the answer box. Hold the answer to give confidence, or choose Skip task, Pause, or Exit and discard.",
+      "2": "The evidence table precedes the answer form. In dialogue, question buttons open prepared explanations; in the dashboard, explanations follow the evidence table. Both show the same underlying information.",
+      "3": "Look at the recurring-power description, the two candidate names and the unconfirmed label status. The identity has no occupant or reference confirmation.",
+      "4": "No. Load 12 has recurring 100 W spans, but refrigerator and freezer are both candidates. It is not a confirmed refrigerator. An occupant check or a controlled observation of the appliance could help; confidence alone does not establish identity."
+    },
+    "A4": {
+      "1": "Is 4.80 kWh the complete day’s measured consumption? Enter a short answer in the answer box. Hold the answer to give confidence, or choose Skip task, Pause, or Exit and discard.",
+      "2": "The evidence table precedes the answer form. In dialogue, question buttons open prepared explanations; in the dashboard, explanations follow the evidence table. Both show the same underlying information.",
+      "3": "Look at observed energy, observed hours, expected hours and 75% coverage. Six hours are missing.",
+      "4": "No. The 4.80 kWh value covers the observed 18 hours, which is 75% of the 24-hour window. Six hours are missing. A complete-day total cannot be established from this evidence, so an exact extrapolated total is not justified."
+    },
+    "A5": {
+      "1": "Does the difference mean additional measured energy? Could the revised value have been shown before the block ended? Enter a short answer in the answer box. Hold the answer to give confidence, or choose Skip task, Pause, or Exit and discard.",
+      "2": "The evidence table precedes the answer form. In dialogue, question buttons open prepared explanations; in the dashboard, explanations follow the evidence table. Both show the same underlying information.",
+      "3": "Look at the immediate and revised estimates for the same block and the revision-availability statement. Block duration and absolute boundaries are not supplied.",
+      "4": "No. The change from 3.20 to 3.60 kWh revises the estimate for the same block. It is not additional measured energy. The revised value was available only after the block ended and could not have been shown beforehand."
+    },
+    "A6": {
+      "1": "Which option respects every stated limit? Can a saving be guaranteed? Enter a short answer in the answer box. Hold the answer to give confidence, or choose Skip task, Pause, or Exit and discard.",
+      "2": "The evidence table precedes the answer form. In dialogue, question buttons open prepared explanations; in the dashboard, explanations follow the evidence table. Both show the same underlying information.",
+      "3": "Look at the minimum occupied-room temperature, latest permitted activity start, food-storage requirement and three options. Then check uncertainty about savings.",
+      "4": "Delaying optional laundry to 20:00 respects all the stated limits. Lowering occupied rooms to 17 °C violates the 20 °C minimum, and turning off the refrigerator violates the food-storage constraint. An energy or cost saving is not guaranteed because no effect or tariff model is supplied."
+    },
+    "B1": {
+      "1": "Which estimated load used most? Is its value directly metered? Enter a short answer in the answer box. Hold the answer to give confidence, or choose Skip task, Pause, or Exit and discard.",
+      "2": "The evidence table precedes the answer form. In dialogue, question buttons open prepared explanations; in the dashboard, explanations follow the evidence table. Both show the same underlying information.",
+      "3": "Look at the component-estimate rows and the separate aggregate meter total, then the label status and uncertainty. The aggregate and component values describe different evidence types.",
+      "4": "Load 8, occupant-named dishwasher, has the largest component estimate: 4.20 kWh. That component value is estimated, not directly metered. The 8.00 kWh whole-home meter total is the directly measured aggregate."
+    },
+    "B2": {
+      "1": "Did use rise or fall, and by how many kWh? Enter a short answer in the answer box. Hold the answer to give confidence, or choose Skip task, Pause, or Exit and discard.",
+      "2": "The evidence table precedes the answer form. In dialogue, question buttons open prepared explanations; in the dashboard, explanations follow the evidence table. Both show the same underlying information.",
+      "3": "Look at the earlier and later energy values and their complete, comparable 24-hour windows. Measurement provenance is not supplied.",
+      "4": "Use rose by 1.50 kWh: 7.50 minus 6.00 kWh. Both windows are complete and cover 24 hours. These values show a change, but do not identify its cause."
+    },
+    "B3": {
+      "1": "Can it be called the refrigerator with certainty? What further information would help? Enter a short answer in the answer box. Hold the answer to give confidence, or choose Skip task, Pause, or Exit and discard.",
+      "2": "The evidence table precedes the answer form. In dialogue, question buttons open prepared explanations; in the dashboard, explanations follow the evidence table. Both show the same underlying information.",
+      "3": "Look at the recurring-power description, the two candidate names and the unconfirmed label status. The identity has no occupant or reference confirmation.",
+      "4": "No. Load 12 has recurring 120 W spans, but refrigerator and freezer are both candidates. It is not a confirmed refrigerator. An occupant check or a controlled observation of the appliance could help; confidence alone does not establish identity."
+    },
+    "B4": {
+      "1": "Is 6.30 kWh the complete day’s measured consumption? Enter a short answer in the answer box. Hold the answer to give confidence, or choose Skip task, Pause, or Exit and discard.",
+      "2": "The evidence table precedes the answer form. In dialogue, question buttons open prepared explanations; in the dashboard, explanations follow the evidence table. Both show the same underlying information.",
+      "3": "Look at observed energy, observed hours, expected hours and 75% coverage. Six hours are missing.",
+      "4": "No. The 6.30 kWh value covers the observed 18 hours, which is 75% of the 24-hour window. Six hours are missing. A complete-day total cannot be established from this evidence, so an exact extrapolated total is not justified."
+    },
+    "B5": {
+      "1": "Does the difference mean additional measured energy? Could the revised value have been shown before the block ended? Enter a short answer in the answer box. Hold the answer to give confidence, or choose Skip task, Pause, or Exit and discard.",
+      "2": "The evidence table precedes the answer form. In dialogue, question buttons open prepared explanations; in the dashboard, explanations follow the evidence table. Both show the same underlying information.",
+      "3": "Look at the immediate and revised estimates for the same block and the revision-availability statement. Block duration and absolute boundaries are not supplied.",
+      "4": "No. The change from 2.40 to 2.80 kWh revises the estimate for the same block. It is not additional measured energy. The revised value was available only after the block ended and could not have been shown beforehand."
+    },
+    "B6": {
+      "1": "Which option respects every stated limit? Can a saving be guaranteed? Enter a short answer in the answer box. Hold the answer to give confidence, or choose Skip task, Pause, or Exit and discard.",
+      "2": "The evidence table precedes the answer form. In dialogue, question buttons open prepared explanations; in the dashboard, explanations follow the evidence table. Both show the same underlying information.",
+      "3": "Look at the minimum occupied-room temperature, latest permitted activity start, food-storage requirement and three options. Then check uncertainty about savings.",
+      "4": "Delaying optional dishwashing to 21:00 respects all the stated limits. Lowering occupied rooms to 18 °C violates the 21 °C minimum, and turning off the freezer violates the food-storage constraint. An energy or cost saving is not guaranteed because no effect or tariff model is supplied."
+    }
+  },
+  "help_retention": "Requested level and relative time only; no observed assistance claim"
+}

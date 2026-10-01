@@ -2,7 +2,7 @@
 
 A conversational bridge from unsupervised NILM results to household energy understanding.
 
-This repository contains the replay bridge, independent question benchmark and in-home display prototype accompanying the working IEEE PES GM 2027 paper. **The repository is private while the demo is being prepared. Public release is planned when it is ready.**
+This repository contains the replay bridge, independent question benchmark and in-home display prototype accompanying the IEEE PES GM 2027 manuscript. **The repository is private while the demo is being prepared. Public release is planned when it is ready.**
 
 ## Run the demo
 
@@ -106,3 +106,30 @@ Git. The no-key test suite does not run this paid evaluation.
 ## License and citation
 
 The source code is licensed under the **GNU General Public License, version 3** (`GPL-3.0-only`); see [LICENSE](LICENSE). Dataset permissions are separate. [CITATION.cff](CITATION.cff) supplies the software citation; cite the accompanying paper once published.
+
+## Engineering benchmarks
+
+Run sustained HTTP load, revisions during answers, synthetic scaling, simulated recovery and visible-browser timing using the [reproducible engineering guide](benchmark/ENGINEERING.md). These tests use generated signals and need no API keys or household archive.
+
+## Study website review prototype
+
+The [study website](study/offline-display/README.md) is included for local review,
+with its draft protocol, invented task evidence, source, rebuild scripts and checks.
+Open `study/offline-display/index.html` directly, or run:
+
+```sh
+python3 -m http.server 8791 --bind 127.0.0.1 --directory study/offline-display
+```
+
+Then open **http://127.0.0.1:8791**. This is separate from the replay demo on
+port 8767. The study flow has prepared responses and simulated submission; it
+has no live AI or response collector and is not open for participant collection.
+Adding it to the private repository does not deploy it or enable GitHub Pages.
+No participant results belong in Git.
+
+Run its no-key checks from the repository root:
+
+```sh
+node study/offline-display/test-review.js
+python3 study/offline-display/verify-review.py
+```

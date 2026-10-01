@@ -1,0 +1,2737 @@
+{
+  "status": "INVENTED_RESEARCHER_TESTS_ONLY",
+  "records": [
+    {
+      "schema_version": "1.0",
+      "record_kind": "synthetic_researcher_test",
+      "study_status": "REVIEW_NOT_APPROVED",
+      "export_notice": "Only invented researcher-testing responses. This browser prototype does not encrypt exported files; approved institutional storage is required before actual participant collection.",
+      "assignment_id": 1,
+      "corpus_sha256": "c2b6d71e09cb725751ed176aeb99c56bf9f8825943564db05e712f6e8cb3cd46",
+      "stage": "finished",
+      "complete": true,
+      "consent": {
+        "version": "v0.2-20260930-REVIEW",
+        "action": "I agree to take part"
+      },
+      "eligibility": {
+        "adult": "yes",
+        "canadian_billpayer": "yes",
+        "english_understanding": "yes",
+        "excluded_relationship": "no"
+      },
+      "background": {},
+      "tasks": [
+        {
+          "card_id": "A1",
+          "task": 1,
+          "set": "A",
+          "condition": "dashboard",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "Load 7, occupant-named dryer, has the largest component estimate: 4.80 kWh. That component value is estimated, not directly metered. The 9.20 kWh whole-home meter total is the directly measured aggregate.",
+          "confidence": null,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A2",
+          "task": 2,
+          "set": "A",
+          "condition": "dashboard",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "Use rose by 1.20 kWh: 6.00 minus 4.80 kWh. Both windows are complete and cover 24 hours. These values show a change, but do not identify its cause.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A3",
+          "task": 3,
+          "set": "A",
+          "condition": "dashboard",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "No. Load 12 has recurring 100 W spans, but refrigerator and freezer are both candidates. It is not a confirmed refrigerator. An occupant check or a controlled observation of the appliance could help; confidence alone does not establish identity.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A4",
+          "task": 4,
+          "set": "A",
+          "condition": "dashboard",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "No. The 4.80 kWh value covers the observed 18 hours, which is 75% of the 24-hour window. Six hours are missing. A complete-day total cannot be established from this evidence, so an exact extrapolated total is not justified.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A5",
+          "task": 5,
+          "set": "A",
+          "condition": "dashboard",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "No. The change from 3.20 to 3.60 kWh revises the estimate for the same block. It is not additional measured energy. The revised value was available only after the block ended and could not have been shown beforehand.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A6",
+          "task": 6,
+          "set": "A",
+          "condition": "dashboard",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "Delaying optional laundry to 20:00 respects all the stated limits. Lowering occupied rooms to 17 °C violates the 20 °C minimum, and turning off the refrigerator violates the food-storage constraint. An energy or cost saving is not guaranteed because no effect or tariff model is supplied.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B1",
+          "task": 1,
+          "set": "B",
+          "condition": "dialogue",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "Load 8, occupant-named dishwasher, has the largest component estimate: 4.20 kWh. That component value is estimated, not directly metered. The 8.00 kWh whole-home meter total is the directly measured aggregate.",
+          "confidence": null,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B2",
+          "task": 2,
+          "set": "B",
+          "condition": "dialogue",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "Use rose by 1.50 kWh: 7.50 minus 6.00 kWh. Both windows are complete and cover 24 hours. These values show a change, but do not identify its cause.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B3",
+          "task": 3,
+          "set": "B",
+          "condition": "dialogue",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "No. Load 12 has recurring 120 W spans, but refrigerator and freezer are both candidates. It is not a confirmed refrigerator. An occupant check or a controlled observation of the appliance could help; confidence alone does not establish identity.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B4",
+          "task": 4,
+          "set": "B",
+          "condition": "dialogue",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "No. The 6.30 kWh value covers the observed 18 hours, which is 75% of the 24-hour window. Six hours are missing. A complete-day total cannot be established from this evidence, so an exact extrapolated total is not justified.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B5",
+          "task": 5,
+          "set": "B",
+          "condition": "dialogue",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "No. The change from 2.40 to 2.80 kWh revises the estimate for the same block. It is not additional measured energy. The revised value was available only after the block ended and could not have been shown beforehand.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B6",
+          "task": 6,
+          "set": "B",
+          "condition": "dialogue",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "Delaying optional dishwashing to 21:00 respects all the stated limits. Lowering occupied rooms to 18 °C violates the 21 °C minimum, and turning off the freezer violates the food-storage constraint. An energy or cost saving is not guaranteed because no effect or tariff model is supplied.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        }
+      ],
+      "condition_ratings": [
+        {
+          "condition": "dashboard",
+          "set": "A",
+          "find": null,
+          "understand": 4,
+          "uncertainty": 4
+        },
+        {
+          "condition": "dialogue",
+          "set": "B",
+          "find": null,
+          "understand": 4,
+          "uncertainty": 4
+        }
+      ],
+      "practice_completion": [
+        {
+          "practice_id": "P1",
+          "condition": "dashboard",
+          "condition_number": 1,
+          "status": "completed"
+        },
+        {
+          "practice_id": "P2",
+          "condition": "dialogue",
+          "condition_number": 2,
+          "status": "skipped"
+        }
+      ],
+      "feedback": {},
+      "events": [
+        {
+          "type": "session_started",
+          "elapsed_ms": 0,
+          "assignment_id": 1
+        },
+        {
+          "type": "practice_finished",
+          "elapsed_ms": 0,
+          "practice_id": "P1",
+          "condition": "dashboard",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 0,
+          "card_id": "A1",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 1200,
+          "card_id": "A1",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 1200,
+          "reason": "page hidden",
+          "card_id": "A1"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 8200,
+          "card_id": "A1"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 9000,
+          "card_id": "A1",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 9000,
+          "card_id": "A2",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 10200,
+          "card_id": "A2",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 10200,
+          "reason": "page hidden",
+          "card_id": "A2"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 17200,
+          "card_id": "A2"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 18000,
+          "card_id": "A2",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 18000,
+          "card_id": "A3",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 19200,
+          "card_id": "A3",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 19200,
+          "reason": "page hidden",
+          "card_id": "A3"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 26200,
+          "card_id": "A3"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 27000,
+          "card_id": "A3",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 27000,
+          "card_id": "A4",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 28200,
+          "card_id": "A4",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 28200,
+          "reason": "page hidden",
+          "card_id": "A4"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 35200,
+          "card_id": "A4"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 36000,
+          "card_id": "A4",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 36000,
+          "card_id": "A5",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 37200,
+          "card_id": "A5",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 37200,
+          "reason": "page hidden",
+          "card_id": "A5"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 44200,
+          "card_id": "A5"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 45000,
+          "card_id": "A5",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 45000,
+          "card_id": "A6",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 46200,
+          "card_id": "A6",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 46200,
+          "reason": "page hidden",
+          "card_id": "A6"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 53200,
+          "card_id": "A6"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 54000,
+          "card_id": "A6",
+          "status": "completed"
+        },
+        {
+          "type": "condition_ratings_finished",
+          "elapsed_ms": 54000,
+          "condition": "dashboard"
+        },
+        {
+          "type": "condition_break_ended",
+          "elapsed_ms": 60000,
+          "duration_ms": 6000
+        },
+        {
+          "type": "practice_finished",
+          "elapsed_ms": 60000,
+          "practice_id": "P2",
+          "condition": "dialogue",
+          "status": "skipped"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 60000,
+          "card_id": "B1",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 61200,
+          "card_id": "B1",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 61200,
+          "reason": "page hidden",
+          "card_id": "B1"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 68200,
+          "card_id": "B1"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 69000,
+          "card_id": "B1",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 69000,
+          "card_id": "B2",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 70200,
+          "card_id": "B2",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 70200,
+          "reason": "page hidden",
+          "card_id": "B2"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 77200,
+          "card_id": "B2"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 78000,
+          "card_id": "B2",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 78000,
+          "card_id": "B3",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 79200,
+          "card_id": "B3",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 79200,
+          "reason": "page hidden",
+          "card_id": "B3"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 86200,
+          "card_id": "B3"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 87000,
+          "card_id": "B3",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 87000,
+          "card_id": "B4",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 88200,
+          "card_id": "B4",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 88200,
+          "reason": "page hidden",
+          "card_id": "B4"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 95200,
+          "card_id": "B4"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 96000,
+          "card_id": "B4",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 96000,
+          "card_id": "B5",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 97200,
+          "card_id": "B5",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 97200,
+          "reason": "page hidden",
+          "card_id": "B5"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 104200,
+          "card_id": "B5"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 105000,
+          "card_id": "B5",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 105000,
+          "card_id": "B6",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 106200,
+          "card_id": "B6",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 106200,
+          "reason": "page hidden",
+          "card_id": "B6"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 113200,
+          "card_id": "B6"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 114000,
+          "card_id": "B6",
+          "status": "completed"
+        },
+        {
+          "type": "condition_ratings_finished",
+          "elapsed_ms": 114000,
+          "condition": "dialogue"
+        },
+        {
+          "type": "final_submission_simulated_no_network",
+          "elapsed_ms": 114000
+        }
+      ],
+      "submission_simulated": true
+    },
+    {
+      "schema_version": "1.0",
+      "record_kind": "synthetic_researcher_test",
+      "study_status": "REVIEW_NOT_APPROVED",
+      "export_notice": "Only invented researcher-testing responses. This browser prototype does not encrypt exported files; approved institutional storage is required before actual participant collection.",
+      "assignment_id": 2,
+      "corpus_sha256": "c2b6d71e09cb725751ed176aeb99c56bf9f8825943564db05e712f6e8cb3cd46",
+      "stage": "finished",
+      "complete": true,
+      "consent": {
+        "version": "v0.2-20260930-REVIEW",
+        "action": "I agree to take part"
+      },
+      "eligibility": {
+        "adult": "yes",
+        "canadian_billpayer": "yes",
+        "english_understanding": "yes",
+        "excluded_relationship": "no"
+      },
+      "background": {},
+      "tasks": [
+        {
+          "card_id": "A1",
+          "task": 1,
+          "set": "A",
+          "condition": "dialogue",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "Load 7, occupant-named dryer, has the largest component estimate: 4.80 kWh. That component value is estimated, not directly metered. The 9.20 kWh whole-home meter total is the directly measured aggregate.",
+          "confidence": null,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A2",
+          "task": 2,
+          "set": "A",
+          "condition": "dialogue",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "Use rose by 1.20 kWh: 6.00 minus 4.80 kWh. Both windows are complete and cover 24 hours. These values show a change, but do not identify its cause.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A3",
+          "task": 3,
+          "set": "A",
+          "condition": "dialogue",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "No. Load 12 has recurring 100 W spans, but refrigerator and freezer are both candidates. It is not a confirmed refrigerator. An occupant check or a controlled observation of the appliance could help; confidence alone does not establish identity.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A4",
+          "task": 4,
+          "set": "A",
+          "condition": "dialogue",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "No. The 4.80 kWh value covers the observed 18 hours, which is 75% of the 24-hour window. Six hours are missing. A complete-day total cannot be established from this evidence, so an exact extrapolated total is not justified.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A5",
+          "task": 5,
+          "set": "A",
+          "condition": "dialogue",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "No. The change from 3.20 to 3.60 kWh revises the estimate for the same block. It is not additional measured energy. The revised value was available only after the block ended and could not have been shown beforehand.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A6",
+          "task": 6,
+          "set": "A",
+          "condition": "dialogue",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "Delaying optional laundry to 20:00 respects all the stated limits. Lowering occupied rooms to 17 °C violates the 20 °C minimum, and turning off the refrigerator violates the food-storage constraint. An energy or cost saving is not guaranteed because no effect or tariff model is supplied.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B1",
+          "task": 1,
+          "set": "B",
+          "condition": "dashboard",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "Load 8, occupant-named dishwasher, has the largest component estimate: 4.20 kWh. That component value is estimated, not directly metered. The 8.00 kWh whole-home meter total is the directly measured aggregate.",
+          "confidence": null,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B2",
+          "task": 2,
+          "set": "B",
+          "condition": "dashboard",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "Use rose by 1.50 kWh: 7.50 minus 6.00 kWh. Both windows are complete and cover 24 hours. These values show a change, but do not identify its cause.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B3",
+          "task": 3,
+          "set": "B",
+          "condition": "dashboard",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "No. Load 12 has recurring 120 W spans, but refrigerator and freezer are both candidates. It is not a confirmed refrigerator. An occupant check or a controlled observation of the appliance could help; confidence alone does not establish identity.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B4",
+          "task": 4,
+          "set": "B",
+          "condition": "dashboard",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "No. The 6.30 kWh value covers the observed 18 hours, which is 75% of the 24-hour window. Six hours are missing. A complete-day total cannot be established from this evidence, so an exact extrapolated total is not justified.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B5",
+          "task": 5,
+          "set": "B",
+          "condition": "dashboard",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "No. The change from 2.40 to 2.80 kWh revises the estimate for the same block. It is not additional measured energy. The revised value was available only after the block ended and could not have been shown beforehand.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B6",
+          "task": 6,
+          "set": "B",
+          "condition": "dashboard",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "Delaying optional dishwashing to 21:00 respects all the stated limits. Lowering occupied rooms to 18 °C violates the 21 °C minimum, and turning off the freezer violates the food-storage constraint. An energy or cost saving is not guaranteed because no effect or tariff model is supplied.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        }
+      ],
+      "condition_ratings": [
+        {
+          "condition": "dialogue",
+          "set": "A",
+          "find": null,
+          "understand": 4,
+          "uncertainty": 4
+        },
+        {
+          "condition": "dashboard",
+          "set": "B",
+          "find": null,
+          "understand": 4,
+          "uncertainty": 4
+        }
+      ],
+      "practice_completion": [
+        {
+          "practice_id": "P1",
+          "condition": "dialogue",
+          "condition_number": 1,
+          "status": "completed"
+        },
+        {
+          "practice_id": "P2",
+          "condition": "dashboard",
+          "condition_number": 2,
+          "status": "skipped"
+        }
+      ],
+      "feedback": {},
+      "events": [
+        {
+          "type": "session_started",
+          "elapsed_ms": 0,
+          "assignment_id": 2
+        },
+        {
+          "type": "practice_finished",
+          "elapsed_ms": 0,
+          "practice_id": "P1",
+          "condition": "dialogue",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 0,
+          "card_id": "A1",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 1200,
+          "card_id": "A1",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 1200,
+          "reason": "page hidden",
+          "card_id": "A1"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 8200,
+          "card_id": "A1"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 9000,
+          "card_id": "A1",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 9000,
+          "card_id": "A2",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 10200,
+          "card_id": "A2",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 10200,
+          "reason": "page hidden",
+          "card_id": "A2"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 17200,
+          "card_id": "A2"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 18000,
+          "card_id": "A2",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 18000,
+          "card_id": "A3",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 19200,
+          "card_id": "A3",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 19200,
+          "reason": "page hidden",
+          "card_id": "A3"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 26200,
+          "card_id": "A3"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 27000,
+          "card_id": "A3",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 27000,
+          "card_id": "A4",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 28200,
+          "card_id": "A4",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 28200,
+          "reason": "page hidden",
+          "card_id": "A4"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 35200,
+          "card_id": "A4"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 36000,
+          "card_id": "A4",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 36000,
+          "card_id": "A5",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 37200,
+          "card_id": "A5",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 37200,
+          "reason": "page hidden",
+          "card_id": "A5"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 44200,
+          "card_id": "A5"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 45000,
+          "card_id": "A5",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 45000,
+          "card_id": "A6",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 46200,
+          "card_id": "A6",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 46200,
+          "reason": "page hidden",
+          "card_id": "A6"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 53200,
+          "card_id": "A6"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 54000,
+          "card_id": "A6",
+          "status": "completed"
+        },
+        {
+          "type": "condition_ratings_finished",
+          "elapsed_ms": 54000,
+          "condition": "dialogue"
+        },
+        {
+          "type": "condition_break_ended",
+          "elapsed_ms": 60000,
+          "duration_ms": 6000
+        },
+        {
+          "type": "practice_finished",
+          "elapsed_ms": 60000,
+          "practice_id": "P2",
+          "condition": "dashboard",
+          "status": "skipped"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 60000,
+          "card_id": "B1",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 61200,
+          "card_id": "B1",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 61200,
+          "reason": "page hidden",
+          "card_id": "B1"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 68200,
+          "card_id": "B1"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 69000,
+          "card_id": "B1",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 69000,
+          "card_id": "B2",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 70200,
+          "card_id": "B2",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 70200,
+          "reason": "page hidden",
+          "card_id": "B2"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 77200,
+          "card_id": "B2"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 78000,
+          "card_id": "B2",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 78000,
+          "card_id": "B3",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 79200,
+          "card_id": "B3",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 79200,
+          "reason": "page hidden",
+          "card_id": "B3"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 86200,
+          "card_id": "B3"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 87000,
+          "card_id": "B3",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 87000,
+          "card_id": "B4",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 88200,
+          "card_id": "B4",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 88200,
+          "reason": "page hidden",
+          "card_id": "B4"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 95200,
+          "card_id": "B4"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 96000,
+          "card_id": "B4",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 96000,
+          "card_id": "B5",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 97200,
+          "card_id": "B5",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 97200,
+          "reason": "page hidden",
+          "card_id": "B5"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 104200,
+          "card_id": "B5"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 105000,
+          "card_id": "B5",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 105000,
+          "card_id": "B6",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 106200,
+          "card_id": "B6",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 106200,
+          "reason": "page hidden",
+          "card_id": "B6"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 113200,
+          "card_id": "B6"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 114000,
+          "card_id": "B6",
+          "status": "completed"
+        },
+        {
+          "type": "condition_ratings_finished",
+          "elapsed_ms": 114000,
+          "condition": "dashboard"
+        },
+        {
+          "type": "final_submission_simulated_no_network",
+          "elapsed_ms": 114000
+        }
+      ],
+      "submission_simulated": true
+    },
+    {
+      "schema_version": "1.0",
+      "record_kind": "synthetic_researcher_test",
+      "study_status": "REVIEW_NOT_APPROVED",
+      "export_notice": "Only invented researcher-testing responses. This browser prototype does not encrypt exported files; approved institutional storage is required before actual participant collection.",
+      "assignment_id": 3,
+      "corpus_sha256": "c2b6d71e09cb725751ed176aeb99c56bf9f8825943564db05e712f6e8cb3cd46",
+      "stage": "finished",
+      "complete": true,
+      "consent": {
+        "version": "v0.2-20260930-REVIEW",
+        "action": "I agree to take part"
+      },
+      "eligibility": {
+        "adult": "yes",
+        "canadian_billpayer": "yes",
+        "english_understanding": "yes",
+        "excluded_relationship": "no"
+      },
+      "background": {},
+      "tasks": [
+        {
+          "card_id": "B1",
+          "task": 1,
+          "set": "B",
+          "condition": "dashboard",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "Load 8, occupant-named dishwasher, has the largest component estimate: 4.20 kWh. That component value is estimated, not directly metered. The 8.00 kWh whole-home meter total is the directly measured aggregate.",
+          "confidence": null,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B2",
+          "task": 2,
+          "set": "B",
+          "condition": "dashboard",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "Use rose by 1.50 kWh: 7.50 minus 6.00 kWh. Both windows are complete and cover 24 hours. These values show a change, but do not identify its cause.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B3",
+          "task": 3,
+          "set": "B",
+          "condition": "dashboard",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "No. Load 12 has recurring 120 W spans, but refrigerator and freezer are both candidates. It is not a confirmed refrigerator. An occupant check or a controlled observation of the appliance could help; confidence alone does not establish identity.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B4",
+          "task": 4,
+          "set": "B",
+          "condition": "dashboard",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "No. The 6.30 kWh value covers the observed 18 hours, which is 75% of the 24-hour window. Six hours are missing. A complete-day total cannot be established from this evidence, so an exact extrapolated total is not justified.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B5",
+          "task": 5,
+          "set": "B",
+          "condition": "dashboard",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "No. The change from 2.40 to 2.80 kWh revises the estimate for the same block. It is not additional measured energy. The revised value was available only after the block ended and could not have been shown beforehand.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B6",
+          "task": 6,
+          "set": "B",
+          "condition": "dashboard",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "Delaying optional dishwashing to 21:00 respects all the stated limits. Lowering occupied rooms to 18 °C violates the 21 °C minimum, and turning off the freezer violates the food-storage constraint. An energy or cost saving is not guaranteed because no effect or tariff model is supplied.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A1",
+          "task": 1,
+          "set": "A",
+          "condition": "dialogue",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "Load 7, occupant-named dryer, has the largest component estimate: 4.80 kWh. That component value is estimated, not directly metered. The 9.20 kWh whole-home meter total is the directly measured aggregate.",
+          "confidence": null,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A2",
+          "task": 2,
+          "set": "A",
+          "condition": "dialogue",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "Use rose by 1.20 kWh: 6.00 minus 4.80 kWh. Both windows are complete and cover 24 hours. These values show a change, but do not identify its cause.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A3",
+          "task": 3,
+          "set": "A",
+          "condition": "dialogue",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "No. Load 12 has recurring 100 W spans, but refrigerator and freezer are both candidates. It is not a confirmed refrigerator. An occupant check or a controlled observation of the appliance could help; confidence alone does not establish identity.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A4",
+          "task": 4,
+          "set": "A",
+          "condition": "dialogue",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "No. The 4.80 kWh value covers the observed 18 hours, which is 75% of the 24-hour window. Six hours are missing. A complete-day total cannot be established from this evidence, so an exact extrapolated total is not justified.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A5",
+          "task": 5,
+          "set": "A",
+          "condition": "dialogue",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "No. The change from 3.20 to 3.60 kWh revises the estimate for the same block. It is not additional measured energy. The revised value was available only after the block ended and could not have been shown beforehand.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A6",
+          "task": 6,
+          "set": "A",
+          "condition": "dialogue",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "Delaying optional laundry to 20:00 respects all the stated limits. Lowering occupied rooms to 17 °C violates the 20 °C minimum, and turning off the refrigerator violates the food-storage constraint. An energy or cost saving is not guaranteed because no effect or tariff model is supplied.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        }
+      ],
+      "condition_ratings": [
+        {
+          "condition": "dashboard",
+          "set": "B",
+          "find": null,
+          "understand": 4,
+          "uncertainty": 4
+        },
+        {
+          "condition": "dialogue",
+          "set": "A",
+          "find": null,
+          "understand": 4,
+          "uncertainty": 4
+        }
+      ],
+      "practice_completion": [
+        {
+          "practice_id": "P1",
+          "condition": "dashboard",
+          "condition_number": 1,
+          "status": "completed"
+        },
+        {
+          "practice_id": "P2",
+          "condition": "dialogue",
+          "condition_number": 2,
+          "status": "skipped"
+        }
+      ],
+      "feedback": {},
+      "events": [
+        {
+          "type": "session_started",
+          "elapsed_ms": 0,
+          "assignment_id": 3
+        },
+        {
+          "type": "practice_finished",
+          "elapsed_ms": 0,
+          "practice_id": "P1",
+          "condition": "dashboard",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 0,
+          "card_id": "B1",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 1200,
+          "card_id": "B1",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 1200,
+          "reason": "page hidden",
+          "card_id": "B1"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 8200,
+          "card_id": "B1"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 9000,
+          "card_id": "B1",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 9000,
+          "card_id": "B2",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 10200,
+          "card_id": "B2",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 10200,
+          "reason": "page hidden",
+          "card_id": "B2"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 17200,
+          "card_id": "B2"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 18000,
+          "card_id": "B2",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 18000,
+          "card_id": "B3",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 19200,
+          "card_id": "B3",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 19200,
+          "reason": "page hidden",
+          "card_id": "B3"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 26200,
+          "card_id": "B3"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 27000,
+          "card_id": "B3",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 27000,
+          "card_id": "B4",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 28200,
+          "card_id": "B4",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 28200,
+          "reason": "page hidden",
+          "card_id": "B4"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 35200,
+          "card_id": "B4"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 36000,
+          "card_id": "B4",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 36000,
+          "card_id": "B5",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 37200,
+          "card_id": "B5",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 37200,
+          "reason": "page hidden",
+          "card_id": "B5"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 44200,
+          "card_id": "B5"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 45000,
+          "card_id": "B5",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 45000,
+          "card_id": "B6",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 46200,
+          "card_id": "B6",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 46200,
+          "reason": "page hidden",
+          "card_id": "B6"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 53200,
+          "card_id": "B6"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 54000,
+          "card_id": "B6",
+          "status": "completed"
+        },
+        {
+          "type": "condition_ratings_finished",
+          "elapsed_ms": 54000,
+          "condition": "dashboard"
+        },
+        {
+          "type": "condition_break_ended",
+          "elapsed_ms": 60000,
+          "duration_ms": 6000
+        },
+        {
+          "type": "practice_finished",
+          "elapsed_ms": 60000,
+          "practice_id": "P2",
+          "condition": "dialogue",
+          "status": "skipped"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 60000,
+          "card_id": "A1",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 61200,
+          "card_id": "A1",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 61200,
+          "reason": "page hidden",
+          "card_id": "A1"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 68200,
+          "card_id": "A1"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 69000,
+          "card_id": "A1",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 69000,
+          "card_id": "A2",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 70200,
+          "card_id": "A2",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 70200,
+          "reason": "page hidden",
+          "card_id": "A2"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 77200,
+          "card_id": "A2"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 78000,
+          "card_id": "A2",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 78000,
+          "card_id": "A3",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 79200,
+          "card_id": "A3",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 79200,
+          "reason": "page hidden",
+          "card_id": "A3"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 86200,
+          "card_id": "A3"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 87000,
+          "card_id": "A3",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 87000,
+          "card_id": "A4",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 88200,
+          "card_id": "A4",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 88200,
+          "reason": "page hidden",
+          "card_id": "A4"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 95200,
+          "card_id": "A4"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 96000,
+          "card_id": "A4",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 96000,
+          "card_id": "A5",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 97200,
+          "card_id": "A5",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 97200,
+          "reason": "page hidden",
+          "card_id": "A5"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 104200,
+          "card_id": "A5"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 105000,
+          "card_id": "A5",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 105000,
+          "card_id": "A6",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 106200,
+          "card_id": "A6",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 106200,
+          "reason": "page hidden",
+          "card_id": "A6"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 113200,
+          "card_id": "A6"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 114000,
+          "card_id": "A6",
+          "status": "completed"
+        },
+        {
+          "type": "condition_ratings_finished",
+          "elapsed_ms": 114000,
+          "condition": "dialogue"
+        },
+        {
+          "type": "final_submission_simulated_no_network",
+          "elapsed_ms": 114000
+        }
+      ],
+      "submission_simulated": true
+    },
+    {
+      "schema_version": "1.0",
+      "record_kind": "synthetic_researcher_test",
+      "study_status": "REVIEW_NOT_APPROVED",
+      "export_notice": "Only invented researcher-testing responses. This browser prototype does not encrypt exported files; approved institutional storage is required before actual participant collection.",
+      "assignment_id": 4,
+      "corpus_sha256": "c2b6d71e09cb725751ed176aeb99c56bf9f8825943564db05e712f6e8cb3cd46",
+      "stage": "finished",
+      "complete": true,
+      "consent": {
+        "version": "v0.2-20260930-REVIEW",
+        "action": "I agree to take part"
+      },
+      "eligibility": {
+        "adult": "yes",
+        "canadian_billpayer": "yes",
+        "english_understanding": "yes",
+        "excluded_relationship": "no"
+      },
+      "background": {},
+      "tasks": [
+        {
+          "card_id": "B1",
+          "task": 1,
+          "set": "B",
+          "condition": "dialogue",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "Load 8, occupant-named dishwasher, has the largest component estimate: 4.20 kWh. That component value is estimated, not directly metered. The 8.00 kWh whole-home meter total is the directly measured aggregate.",
+          "confidence": null,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B2",
+          "task": 2,
+          "set": "B",
+          "condition": "dialogue",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "Use rose by 1.50 kWh: 7.50 minus 6.00 kWh. Both windows are complete and cover 24 hours. These values show a change, but do not identify its cause.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B3",
+          "task": 3,
+          "set": "B",
+          "condition": "dialogue",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "No. Load 12 has recurring 120 W spans, but refrigerator and freezer are both candidates. It is not a confirmed refrigerator. An occupant check or a controlled observation of the appliance could help; confidence alone does not establish identity.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B4",
+          "task": 4,
+          "set": "B",
+          "condition": "dialogue",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "No. The 6.30 kWh value covers the observed 18 hours, which is 75% of the 24-hour window. Six hours are missing. A complete-day total cannot be established from this evidence, so an exact extrapolated total is not justified.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B5",
+          "task": 5,
+          "set": "B",
+          "condition": "dialogue",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "No. The change from 2.40 to 2.80 kWh revises the estimate for the same block. It is not additional measured energy. The revised value was available only after the block ended and could not have been shown beforehand.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "B6",
+          "task": 6,
+          "set": "B",
+          "condition": "dialogue",
+          "condition_number": 1,
+          "status": "completed",
+          "answer": "Delaying optional dishwashing to 21:00 respects all the stated limits. Lowering occupied rooms to 18 °C violates the 21 °C minimum, and turning off the freezer violates the food-storage constraint. An energy or cost saving is not guaranteed because no effect or tariff model is supplied.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A1",
+          "task": 1,
+          "set": "A",
+          "condition": "dashboard",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "Load 7, occupant-named dryer, has the largest component estimate: 4.80 kWh. That component value is estimated, not directly metered. The 9.20 kWh whole-home meter total is the directly measured aggregate.",
+          "confidence": null,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A2",
+          "task": 2,
+          "set": "A",
+          "condition": "dashboard",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "Use rose by 1.20 kWh: 6.00 minus 4.80 kWh. Both windows are complete and cover 24 hours. These values show a change, but do not identify its cause.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A3",
+          "task": 3,
+          "set": "A",
+          "condition": "dashboard",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "No. Load 12 has recurring 100 W spans, but refrigerator and freezer are both candidates. It is not a confirmed refrigerator. An occupant check or a controlled observation of the appliance could help; confidence alone does not establish identity.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A4",
+          "task": 4,
+          "set": "A",
+          "condition": "dashboard",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "No. The 4.80 kWh value covers the observed 18 hours, which is 75% of the 24-hour window. Six hours are missing. A complete-day total cannot be established from this evidence, so an exact extrapolated total is not justified.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A5",
+          "task": 5,
+          "set": "A",
+          "condition": "dashboard",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "No. The change from 3.20 to 3.60 kWh revises the estimate for the same block. It is not additional measured energy. The revised value was available only after the block ended and could not have been shown beforehand.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        },
+        {
+          "card_id": "A6",
+          "task": 6,
+          "set": "A",
+          "condition": "dashboard",
+          "condition_number": 2,
+          "status": "completed",
+          "answer": "Delaying optional laundry to 20:00 respects all the stated limits. Lowering occupied rooms to 17 °C violates the 20 °C minimum, and turning off the refrigerator violates the food-storage constraint. An energy or cost saving is not guaranteed because no effect or tariff model is supplied.",
+          "confidence": 80,
+          "active_ms": 2000,
+          "elapsed_ms": 9000,
+          "limit_ms": 180000,
+          "help_max": 0,
+          "help_events": [],
+          "optional_task_note": "Invented testing only.",
+          "prepared_questions_opened": [
+            "primary"
+          ],
+          "accommodation_extensions": []
+        }
+      ],
+      "condition_ratings": [
+        {
+          "condition": "dialogue",
+          "set": "B",
+          "find": null,
+          "understand": 4,
+          "uncertainty": 4
+        },
+        {
+          "condition": "dashboard",
+          "set": "A",
+          "find": null,
+          "understand": 4,
+          "uncertainty": 4
+        }
+      ],
+      "practice_completion": [
+        {
+          "practice_id": "P1",
+          "condition": "dialogue",
+          "condition_number": 1,
+          "status": "completed"
+        },
+        {
+          "practice_id": "P2",
+          "condition": "dashboard",
+          "condition_number": 2,
+          "status": "skipped"
+        }
+      ],
+      "feedback": {},
+      "events": [
+        {
+          "type": "session_started",
+          "elapsed_ms": 0,
+          "assignment_id": 4
+        },
+        {
+          "type": "practice_finished",
+          "elapsed_ms": 0,
+          "practice_id": "P1",
+          "condition": "dialogue",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 0,
+          "card_id": "B1",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 1200,
+          "card_id": "B1",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 1200,
+          "reason": "page hidden",
+          "card_id": "B1"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 8200,
+          "card_id": "B1"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 9000,
+          "card_id": "B1",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 9000,
+          "card_id": "B2",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 10200,
+          "card_id": "B2",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 10200,
+          "reason": "page hidden",
+          "card_id": "B2"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 17200,
+          "card_id": "B2"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 18000,
+          "card_id": "B2",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 18000,
+          "card_id": "B3",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 19200,
+          "card_id": "B3",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 19200,
+          "reason": "page hidden",
+          "card_id": "B3"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 26200,
+          "card_id": "B3"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 27000,
+          "card_id": "B3",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 27000,
+          "card_id": "B4",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 28200,
+          "card_id": "B4",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 28200,
+          "reason": "page hidden",
+          "card_id": "B4"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 35200,
+          "card_id": "B4"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 36000,
+          "card_id": "B4",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 36000,
+          "card_id": "B5",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 37200,
+          "card_id": "B5",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 37200,
+          "reason": "page hidden",
+          "card_id": "B5"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 44200,
+          "card_id": "B5"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 45000,
+          "card_id": "B5",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 45000,
+          "card_id": "B6",
+          "condition": "dialogue"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 46200,
+          "card_id": "B6",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 46200,
+          "reason": "page hidden",
+          "card_id": "B6"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 53200,
+          "card_id": "B6"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 54000,
+          "card_id": "B6",
+          "status": "completed"
+        },
+        {
+          "type": "condition_ratings_finished",
+          "elapsed_ms": 54000,
+          "condition": "dialogue"
+        },
+        {
+          "type": "condition_break_ended",
+          "elapsed_ms": 60000,
+          "duration_ms": 6000
+        },
+        {
+          "type": "practice_finished",
+          "elapsed_ms": 60000,
+          "practice_id": "P2",
+          "condition": "dashboard",
+          "status": "skipped"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 60000,
+          "card_id": "A1",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 61200,
+          "card_id": "A1",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 61200,
+          "reason": "page hidden",
+          "card_id": "A1"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 68200,
+          "card_id": "A1"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 69000,
+          "card_id": "A1",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 69000,
+          "card_id": "A2",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 70200,
+          "card_id": "A2",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 70200,
+          "reason": "page hidden",
+          "card_id": "A2"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 77200,
+          "card_id": "A2"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 78000,
+          "card_id": "A2",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 78000,
+          "card_id": "A3",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 79200,
+          "card_id": "A3",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 79200,
+          "reason": "page hidden",
+          "card_id": "A3"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 86200,
+          "card_id": "A3"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 87000,
+          "card_id": "A3",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 87000,
+          "card_id": "A4",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 88200,
+          "card_id": "A4",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 88200,
+          "reason": "page hidden",
+          "card_id": "A4"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 95200,
+          "card_id": "A4"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 96000,
+          "card_id": "A4",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 96000,
+          "card_id": "A5",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 97200,
+          "card_id": "A5",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 97200,
+          "reason": "page hidden",
+          "card_id": "A5"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 104200,
+          "card_id": "A5"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 105000,
+          "card_id": "A5",
+          "status": "completed"
+        },
+        {
+          "type": "task_started",
+          "elapsed_ms": 105000,
+          "card_id": "A6",
+          "condition": "dashboard"
+        },
+        {
+          "type": "prepared_question_opened",
+          "elapsed_ms": 106200,
+          "card_id": "A6",
+          "question_id": "primary"
+        },
+        {
+          "type": "task_paused",
+          "elapsed_ms": 106200,
+          "reason": "page hidden",
+          "card_id": "A6"
+        },
+        {
+          "type": "task_resumed",
+          "elapsed_ms": 113200,
+          "card_id": "A6"
+        },
+        {
+          "type": "task_finished",
+          "elapsed_ms": 114000,
+          "card_id": "A6",
+          "status": "completed"
+        },
+        {
+          "type": "condition_ratings_finished",
+          "elapsed_ms": 114000,
+          "condition": "dashboard"
+        },
+        {
+          "type": "final_submission_simulated_no_network",
+          "elapsed_ms": 114000
+        }
+      ],
+      "submission_simulated": true
+    }
+  ]
+}

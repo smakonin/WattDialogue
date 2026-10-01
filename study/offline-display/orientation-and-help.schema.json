@@ -1,0 +1,457 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WattDialogue separate invented orientation and requested-help REVIEW materials",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "status": {
+      "type": "string"
+    },
+    "practice_cards": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "enum": [
+              "P1",
+              "P2"
+            ]
+          },
+          "fictional": {
+            "const": true
+          },
+          "status": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "facts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "label": {
+                  "type": "string"
+                },
+                "text": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "label",
+                "text"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "questions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "enum": [
+                    "primary",
+                    "followup1",
+                    "followup2"
+                  ]
+                },
+                "label": {
+                  "type": "string"
+                },
+                "response": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "label",
+                "response"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "feedback": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "fictional",
+          "status",
+          "title",
+          "facts",
+          "prompt",
+          "questions",
+          "feedback"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "practice_assignment": {
+      "type": "string"
+    },
+    "practice_retention": {
+      "type": "string"
+    },
+    "help_levels": {
+      "type": "object",
+      "properties": {
+        "1": {
+          "type": "string"
+        },
+        "2": {
+          "type": "string"
+        },
+        "3": {
+          "type": "string"
+        },
+        "4": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "additionalProperties": false
+    },
+    "help_cards": {
+      "type": "object",
+      "properties": {
+        "A1": {
+          "type": "object",
+          "properties": {
+            "1": {
+              "type": "string"
+            },
+            "2": {
+              "type": "string"
+            },
+            "3": {
+              "type": "string"
+            },
+            "4": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "additionalProperties": false
+        },
+        "A2": {
+          "type": "object",
+          "properties": {
+            "1": {
+              "type": "string"
+            },
+            "2": {
+              "type": "string"
+            },
+            "3": {
+              "type": "string"
+            },
+            "4": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "additionalProperties": false
+        },
+        "A3": {
+          "type": "object",
+          "properties": {
+            "1": {
+              "type": "string"
+            },
+            "2": {
+              "type": "string"
+            },
+            "3": {
+              "type": "string"
+            },
+            "4": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "additionalProperties": false
+        },
+        "A4": {
+          "type": "object",
+          "properties": {
+            "1": {
+              "type": "string"
+            },
+            "2": {
+              "type": "string"
+            },
+            "3": {
+              "type": "string"
+            },
+            "4": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "additionalProperties": false
+        },
+        "A5": {
+          "type": "object",
+          "properties": {
+            "1": {
+              "type": "string"
+            },
+            "2": {
+              "type": "string"
+            },
+            "3": {
+              "type": "string"
+            },
+            "4": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "additionalProperties": false
+        },
+        "A6": {
+          "type": "object",
+          "properties": {
+            "1": {
+              "type": "string"
+            },
+            "2": {
+              "type": "string"
+            },
+            "3": {
+              "type": "string"
+            },
+            "4": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "additionalProperties": false
+        },
+        "B1": {
+          "type": "object",
+          "properties": {
+            "1": {
+              "type": "string"
+            },
+            "2": {
+              "type": "string"
+            },
+            "3": {
+              "type": "string"
+            },
+            "4": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "additionalProperties": false
+        },
+        "B2": {
+          "type": "object",
+          "properties": {
+            "1": {
+              "type": "string"
+            },
+            "2": {
+              "type": "string"
+            },
+            "3": {
+              "type": "string"
+            },
+            "4": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "additionalProperties": false
+        },
+        "B3": {
+          "type": "object",
+          "properties": {
+            "1": {
+              "type": "string"
+            },
+            "2": {
+              "type": "string"
+            },
+            "3": {
+              "type": "string"
+            },
+            "4": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "additionalProperties": false
+        },
+        "B4": {
+          "type": "object",
+          "properties": {
+            "1": {
+              "type": "string"
+            },
+            "2": {
+              "type": "string"
+            },
+            "3": {
+              "type": "string"
+            },
+            "4": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "additionalProperties": false
+        },
+        "B5": {
+          "type": "object",
+          "properties": {
+            "1": {
+              "type": "string"
+            },
+            "2": {
+              "type": "string"
+            },
+            "3": {
+              "type": "string"
+            },
+            "4": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "additionalProperties": false
+        },
+        "B6": {
+          "type": "object",
+          "properties": {
+            "1": {
+              "type": "string"
+            },
+            "2": {
+              "type": "string"
+            },
+            "3": {
+              "type": "string"
+            },
+            "4": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "1",
+            "2",
+            "3",
+            "4"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5",
+        "A6",
+        "B1",
+        "B2",
+        "B3",
+        "B4",
+        "B5",
+        "B6"
+      ],
+      "additionalProperties": false
+    },
+    "help_retention": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema_version",
+    "status",
+    "practice_cards",
+    "practice_assignment",
+    "practice_retention",
+    "help_levels",
+    "help_cards",
+    "help_retention"
+  ],
+  "additionalProperties": false
+}

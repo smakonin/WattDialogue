@@ -99,3 +99,25 @@ Bridge tests use synthetic native fixtures with deliberately invalid evaluator c
 ```sh
 python3 -m unittest discover -s tests -v
 ```
+
+
+## Query snapshots and concurrent cache access
+
+`store.snapshot(recording, block_id)` returns the immutable evidence view used for
+an entire service query or summary. Frozen replay files must remain unchanged for
+the run, so `ReplayStore` returns itself. Its four-entry cache serializes lookup,
+construction and eviction with a lock; returned arrays remain immutable.
+
+A mutable adapter must atomically capture both estimate modes and matching model
+version, source metadata and scope in its view. `load`, `metadata`, `model_version`
+and `source_metadata` on that view must remain consistent after publication of a
+new live generation. This includes multiple comparison periods, model tool turns,
+local fallback and display refresh. The service creates a request-local view and
+never swaps its shared store across threads. Direct low-level `execute`/tool calls
+are the caller's responsibility; use `query`/`summary` for complete answers.
+
+The public engineering fixture demonstrates atomic in-memory publication; it does
+not add a live meter/HyNILM ingestion endpoint. Availability rules still apply to
+snapshots. Confirmation compares the submitted evidence ID with a fresh summary
+and rejects changed content, including revisions within the same model version.
+See [engineering benchmarks](../benchmark/ENGINEERING.md).

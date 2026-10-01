@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import math
+from copy import copy
 import re
 import time
 import json
@@ -165,6 +166,9 @@ class WattDialogueService:
         return self.tools.call(name, args, home_scope)
 
     def summary(self, home, block_id, as_of=None):
+        return self._snapshot_view(home, block_id)._summary(home, block_id, as_of)
+
+    def _summary(self, home, block_id, as_of=None):
         start, end = self.bounds(home, block_id)
         as_of = epoch(as_of) if as_of is not None else end
         result = self.execute("get_window_summary", {"block_id": int(block_id), "start": start,
@@ -297,7 +301,23 @@ class WattDialogueService:
                 "latency_s": time.monotonic() - tick,
                 "explanation_source": "Deterministic local template; not an LLM result"}
 
+    def _snapshot_view(self, home, block_id):
+        """Pin evidence for the complete answer, including fallback and refresh.
+
+        Keep the shared agent/usage and label registry; model-version and as-of
+        label keys still apply. Never swap the live service store across threads.
+        """
+        view = copy(self)
+        view.store = self.store.snapshot(home, block_id)
+        view.tools = EnergyTools(view.store, self.labels, self.tools.flat_rate_cad_per_kwh)
+        return view
+
     def query(self, payload, home_scope):
+        if payload.get("home", home_scope) != home_scope:
+            raise ValueError("This request is outside the household selected in the display session.")
+        return self._snapshot_view(home_scope, int(payload["block_id"]))._query(payload, home_scope)
+
+    def _query(self, payload, home_scope):
         if payload.get("home", home_scope) != home_scope:
             raise ValueError("This request is outside the household selected in the display session.")
         if payload.get("mode", "local") != "openai":

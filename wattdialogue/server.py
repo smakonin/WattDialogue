@@ -19,6 +19,10 @@ STATIC_FILES = {"/": "index.html", "/index.html": "index.html", "/style.css": "s
 
 
 class DisplayServer(ThreadingHTTPServer):
+    # Permit a small burst of local clients while handler threads start.
+    # This is the socket accept backlog, not a worker or connection limit.
+    request_queue_size = 32
+
     def __init__(self, address, service):
         if address[0] not in ("127.0.0.1", "localhost", "::1"):
             raise ValueError("The proof-of-concept server must bind to loopback.")

@@ -1,0 +1,380 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{lmodern,microtype,booktabs,array,longtable,enumitem,amsmath}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{WattDialogue participant study}
+\rhead{Draft v0.2 -- 30 September 2026}
+\cfoot{\thepage}
+\setlength{\headheight}{14pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+\setlist{nosep,leftmargin=*}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcommand{\pending}[1]{\textbf{Confirm before submission:} #1}
+\title{WattDialogue Participant Protocol and Ethics Submission Draft}
+\author{Stephen Makonin\\Sole proposed Principal Investigator}
+\date{Draft v0.2 -- 30 September 2026}
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\textbf{Status.} This is a review draft for an unpaid, anonymous online behavioural study. It has not been submitted or approved. No participant has been contacted, recruited, screened or studied. Stephen Makonin confirmed that he is the only investigator. His institutional appointment, PI eligibility and training remain to be verified. The earlier in-person, paid, coded-record draft is preserved in the archive and is superseded by this version.
+
+\textbf{Study title.} Understanding household energy estimates with WattDialogue: a feasibility comparison of a conversational display and a readable dashboard.
+
+\textbf{Proposed scope.} An open-link website will seek 16 valid, completed paired response records from volunteers who self-report that they are at least 19 years old and pay or share a Canadian household electricity bill. Volunteers use their own device and Internet connection. Each completes twelve tasks about invented households on the same device. Both views use the same checked evidence and fixed prepared responses. No participant text goes to OpenAI or another AI service. No bill, real home trace, appliance photo or control command is collected.
+
+\textbf{Anonymity and implementation.} The research application is designed to collect no name, signature, email, login, IP address, user-agent string, fingerprint, cookie, persistent browser storage or precise absolute timestamp. Answers remain in browser memory until one final submission. The actual institutional host, transport, storage, backups and provider/security logs have not been selected or audited. An anonymous research dataset is the design goal; end-to-end anonymity must not be promised until those arrangements are verified. The local REVIEW prototype has no collection backend and is for synthetic researcher testing only.
+
+\textbf{Decisions needed.} Confirm PI eligibility, CORE training, institutional contacts, funding and conflict disclosures, approved host and data residence, disabled or otherwise resolved identifying infrastructure logs, secure storage and retention, accessibility checks, recruitment permissions and collection period. No approval number, signature, submission or deployment is implied.
+
+\newpage
+\tableofcontents
+\newpage
+\section{Purpose and research questions}
+Residential energy information is difficult to use when it assumes occupants can interpret engineering plots or purchase a monitoring product. The Consumer Bill of Rights for Energy Conservation argues that access to appliance information should support participation regardless of household finances and preserve privacy, security and comfort~\cite{rights}. WattDialogue explains estimated nonintrusive load monitoring (NILM) components while distinguishing an estimated load, a candidate appliance name and a confirmed name.
+
+We will examine whether a conversational presentation improves answers to household questions compared with a readable dashboard containing the same estimates and evidence. Secondary questions concern time, confidence, uncertainty, comfort constraints and ease of use. The dialogue retrieves controlled explanations; this study does not test unrestricted live conversation, real-home appliance recognition, electricity savings or installed metering equipment. Formal model evaluation remains a separate technical study.
+
+This web study requires an owned or otherwise available device and Internet service. It cannot establish access for residents who lack either. A utility-provided display that does not require personal technology remains a proposed future service, not a provision tested here. Open recruitment, an English interface and an unpaid activity may exclude or discourage some residents. Optional access questions describe the responding sample; they do not establish socioeconomic representativeness or equality.
+
+\section{Design and response target}
+\subsection{Eligibility and open participation}
+The feasibility target is 16 valid completed paired response records. A respondent must self-report being at least 19 years old, living in a residential household in Canada, and paying or sharing responsibility for its electricity bill. They must understand the English information and tasks, with their normal accessibility tools and the website options. Nineteen years is a study restriction chosen to avoid enrolling minors across Canadian jurisdictions, not a claim that adulthood has one age throughout Canada. Renters and shared-bill households are eligible. No age, income, account, citizenship or bill-payment proof is requested.
+
+People who developed or previously tested this prototype, close family of the PI, and people currently supervised, assessed, employed directly or taught by him will be asked not to participate. These are self-reported restrictions; the study will not investigate identity or employment. Public invitations will not target people in a dependent relationship with the PI or use utility service access to encourage participation. Accessibility needs alone are not an exclusion. No medical diagnosis is requested.
+
+There is no registration, contact list, unique-person verification or technology-access quota. The invitation asks each person to take part only once, but repeat entries and automated responses cannot be reliably excluded without identifiers. The target counts submitted records, not verified distinct people. Before recruitment, declare an opening and closing date. Close the link at the earlier of that date or receipt of 16 structurally valid paired records with both proportions defined. Include and report any concurrent valid submissions received before actual closure; do not discard overshoot on the basis of answers. If the deadline arrives first, report the smaller sample. An unfinished visit or failed eligibility check generates no research submission; recruitment conversion and individual dropout counts are therefore unavailable.
+
+\subsection{Conditions and allocation}
+Each respondent uses both views on the same personal device. Both support the same text scaling, keyboard/touch controls and evidence. The dashboard contains readable tables, labelled bars and concise explanations. The dialogue uses predefined question and follow-up buttons to retrieve prepared explanations. Both expose the same values, units, relative intervals, coverage, label status, revision availability, uncertainty and comfort constraints. Neither view will be deliberately made cryptic.
+
+The response corpus is immutable during collection. Prose may have been assisted by an AI tool before the study, using invented evidence only. The PI checks every statement, records preparation provenance and corrections, and freezes the reviewed corpus. No cloud inference or arbitrary free-form chat occurs during participation. Short task answers are distinct from conversational inputs: they are held locally and included only in the final research submission. The study concerns presentation, explanation access and navigation rather than live-agent accuracy or latency.
+
+The two task sets and four possible assignments are retained:
+\begin{center}
+\begin{tabular}{lll}
+\toprule
+Allocation & First condition and set & Second condition and set\\
+\midrule
+1 & Dashboard A & Dialogue B\\
+2 & Dialogue A & Dashboard B\\
+3 & Dashboard B & Dialogue A\\
+4 & Dialogue B & Dashboard A\\
+\bottomrule
+\end{tabular}
+\end{center}
+The production design proposes an equal-probability browser-side random selection after consent and eligibility, using no identity or access profile. The allocation is included only in a final submitted record. Open recruitment and discarded unfinished visits do not guarantee four complete records per row. We will report the realized counts and task-set/order patterns. A local seeded sequence may exercise all four paths during researcher testing; it is not a claim of balanced participant enrolment. The PI must confirm the final allocation implementation before collection.
+
+Tasks A and B have the same evidence types and two-point rubrics. They are structurally matched; empirical equivalence has not been established. Using different examples reduces recall while leaving possible set and order effects to be described.
+
+\subsection{Remote procedure, time and help}
+The website presents the information sheet, an affirmative consent choice, eligibility questions, optional background questions, brief practice, six tasks in each view, a break, ratings and optional written feedback. No researcher observes the respondent or records their screen, voice or image. A planning estimate is 30--45 minutes, not a measured pilot result. Twelve three-minute task limits allow up to 36 browser-visible, unpaused minutes; consent, practice, ratings and breaks can make a session about an hour or longer with accommodations. The invitation and consent state this variability. This unpaid burden and actual completion times will be evaluated for feasibility.
+
+The respondent may pause, skip tasks, extend a limit in one-minute accommodation increments, or exit. Each task starts with a three-minute browser-visible, unpaused allowance. Confidence is requested after an answer. A pause, page hiding or reported technical fault stops active timing; elapsed and active durations are recorded relative to the session, without calendar timestamps. This is browser timing, not observed attention or cognitive effort; timer failures are flagged as missing rather than replaced by zero. Respondents may take a longer break, but there is no saved return link: closing or reloading the page loses unsubmitted answers. Timeout is a scheduled task without an answer; a reported technical fault is missing rather than incorrect. Instructions ask respondents to work independently and use only the supplied evidence, but outside help is not observable.
+
+Help buttons can (1) repeat instructions or explain an input control; (2) show navigation guidance; (3) show where relevant evidence is located; or (4) reveal an energy explanation or answer. All help text and its availability must be checked and frozen for both views. The application records requested levels and relative timing, not researcher-observed assistance. Level 3 or 4 requests are excluded from a sensitivity summary of tasks without those requests. This does not prove a respondent worked unaided. Accessibility controls are separate from answer help. No correctness grades or individualized scored-task feedback are given between conditions. The checked prepared interpretations remain available as interface content, equally in both views. Practice uses the separate invented orientation cards in Appendix~\ref{app:practice}. Its answers are discarded; only completion/skip markers and relative events are retained. The exact practice and help materials are prepared for PI review and excluded from task scoring.
+
+\section{Outcomes and analysis}
+\subsection{Primary outcome and scoring}
+Each task has two rubric concepts, worth one point each. Each condition has a maximum score of 12. The task-correctness proportion is the number earning both points divided by six scheduled tasks, excluding reported technical-fault tasks. Skips and timeouts remain not fully correct. A condition with no nonfault tasks has an undefined proportion and cannot enter the paired estimate. Report the denominator and faults for each condition. The primary difference is dialogue proportion minus dashboard proportion within a submitted paired record. Partial credit is secondary. The unit is the paired submitted record, not 192 independent tasks and not a verified unique person.
+
+The PI scores a shuffled answer-only sheet that omits allocation, condition and events, using the frozen rubric. As the sole investigator and developer, he cannot provide fully independent blinded assessment; answers may also reveal their source. A repeat shuffled scoring pass after at least one week will check consistency. Discrepancies and resolutions will be retained. A later additional scorer requires relevant personnel, confidentiality and training arrangements before access.
+
+\subsection{Secondary outcomes}
+Record active/elapsed task duration, confidence from 0 to 100, recognition of required uncertainty, comfort-constraint adherence, requested help levels, skips, timeouts and reported technical/accessibility problems. After each view, respondents may rate finding information, understanding it and confidence about what remains uncertain from 1 (very low) to 5 (very high). These are study-specific items, not a validated scale. Record text-scale changes as accessibility events, not device fingerprints.
+
+Confidence calibration will be described using mean confidence for fully correct and other answers. With $p=c/100$ and fully correct status $y\in\{0,1\}$, the within-condition mean of $(p-y)^2$ is an additional descriptive summary. It concerns the supplied task, not appropriate trust in an entire system. Help-request frequency and accessibility failures will be described without claiming researcher-observed effort or verified unaided use.
+
+\subsection{Validity, missingness and reporting}
+Before recruitment, archive protocol, task, corpus, software and analysis versions and hashes. The main descriptive report shows every valid paired-record difference, its plot, mean and median. An additional descriptive 95\% interval uses 10,000 whole-record paired bootstrap resamples with a recorded seed and is conditional on treating submitted records as independent. Distinct respondents and independence cannot be verified; the small sample and possible repeated submissions limit the interval. It cannot establish population benefits, equality or savings. No underpowered significance test will serve as the principal conclusion.
+
+Structural validity is set before collection: affirmative consent and eligible self-reports, a recognized allocation and frozen corpus version, the scheduled twelve task outcomes with six per view and one set per view, valid field types/ranges, and both condition-completion markers. A completed record may contain skipped or faulted tasks. Both proportions must be defined for the primary paired estimate. Report all received records, structural exclusions and reasons, the paired-estimate count, task denominators, and a sensitivity summary restricted to records completing all six tasks per view without faults. Do not exclude poor performance or guess a person's identity. Repeat submissions and bots remain unverified; no IP, fingerprint or external CAPTCHA is used for deduplication.
+
+Optional ratings or background answers are not imputed. Skipped/timed-out task counts remain visible. Technical faults are missing. No individual dropouts, total visitors, failed eligibility counts or partially completed answers are retained by the research application. Therefore this study cannot report a recruitment response rate or individual withdrawal rate. Optional access categories are summarized only when groups are large enough; small categories are combined or omitted. Raw text and individual research rows are not publicly released.
+
+\section{Recruitment and electronic consent}
+Recruitment begins only after written ethics approval covers the final materials; SFU policy covers contact as well as collection~\cite{sfu-policy}. Approved public posts on social-media accounts or community pages provide one open study link. Confirm the posting rules and permissions where applicable. Do not scrape member lists, ask people to comment with names, register through direct messages, or send individualized recruitment messages. A platform may identify people who interact with its post under its own terms; the PI does not collect or join those interactions to study responses. Ask people not to post answers or personal information publicly.
+
+The landing page presents the information sheet before consent. A person can read, print or save it and contact the PI independently with questions. Such correspondence is not joined to responses and should not contain task answers. The issued form must supply verified PI and independent REB contacts. No name, signature, login, email or survey-return token is required. Selecting ``I agree to take part'' proceeds; ``I do not agree'' exits without submitting research data. Evidence of consent consists of the version and affirmative action included in a final submitted packet, without an identifying signature or precise calendar time. The REB must approve this electronic documentation approach~\cite{tcps-consent}.
+
+Eligibility and answers stay in page memory. A final review screen clearly asks whether to submit. Only ``Submit my anonymous responses'' transmits the complete planned packet to the approved research endpoint. No task, partial answer, eligibility outcome or initial consent event is autosaved to the research server. Exiting or closing before submission discards the local packet. Provider access/security logging must still be audited, because ordinary page access can create identifiable infrastructure records even when the application collects none.
+
+The primary consent attachment uses SFU's current 2026 Survey template, rather than the archived Interview template, because the activity is self-administered online. Preserve the institutional section order and explain protected-wording changes under its current instructions~\cite{sfu-consent}. No claim is made that preparing an attachment constitutes institutional approval or filing.
+
+\section{Risks and safeguards}
+The proposed activity appears suitable for minimal-risk behavioural review, subject to the REB determination. Inconveniences include fatigue, frustration, embarrassment about answers, an unpaid time burden and possible Internet charges under the respondent's own plan. Optional questions about technology access may be uncomfortable and can be skipped. No income amount, hardship history or diagnostic detail is solicited. Instructions explain that the interface is being assessed and that incorrect answers are useful design evidence. The respondent controls pauses, skips and exit.
+
+Short answers could inadvertently disclose personal details. Instructions request responses about invented scenarios only, without names, addresses, utility credentials, private financial details or details of other people. The PI redacts accidental identifying text before analysis/publication and avoids distinctive quotations. Invented meter evidence, prepared questions and no real-home upload reduce privacy exposure but do not guarantee that free text is anonymous. There is no microphone, camera, screen capture, audio/video recording, telemetry or AI processing of participant text.
+
+The website makes no appliance changes and promises no personal savings. Hypothetical actions must preserve the displayed comfort and food-storage constraints. Participation does not affect electricity service, benefits, housing, employment, education or university standing. The PI developed WattDialogue and has a related patent-pending application; this potential conflict and verified funding/commercial interests must be disclosed. Failures and negative feedback remain reportable. No utility or manufacturer receives research responses.
+
+The actual public site must use approved HTTPS, restricted institutional storage and appropriate encryption/access controls, with no third-party fonts/scripts, analytics, external CAPTCHA or participant-content AI calls. Hosting, backups, database metadata, reverse proxy, CDN, security monitoring and referrer handling must be reviewed. Identifying logs cannot be treated as anonymous simply because they are separate or hashed. If this design cannot be delivered on the selected host, resolve the host or revise the protocol/consent through review before recruitment. Do not promise end-to-end anonymity in advance of this check.
+
+An unexpected privacy or software incident pauses collection. The PI protects affected records and follows institutional/REB reporting requirements. No participant identity is available for individualized follow-up; the approved incident plan must address this limitation. A new live-cloud substudy, collection of identifiers, recordings or changes of host/personnel require the appropriate approved amendment before use~\cite{sfu-review}.
+
+\section{Data flow, retention and withdrawal}
+\subsection{Information and boundaries}
+\begin{longtable}{L{3.0cm}L{5.7cm}L{5.8cm}}
+\toprule
+Record & Contents and purpose & Planned handling\\
+\midrule
+\endhead
+Browser working packet & Consent action/version, eligibility self-reports, allocation, answers, confidence, relative timing/help/text-scale events, faults/skips, practice completion/skip, optional access categories, ratings and written feedback. & RAM only until final Submit; no cookies, localStorage, autosave, contact link or return token. Close/reload/exit discards unsubmitted data.\\
+Submitted research packet & Same completed packet; no names, signatures, contact fields, IP, user-agent, fingerprint or precise absolute time. & Approved institutional HTTPS endpoint/storage, not yet selected or implemented. No participant-linked code or deletion key. PI-only research access; proposed five years after study completion, then secure deletion including backups.\\
+Infrastructure metadata & Actual host/proxy/CDN/security practices, transport headers and backups. & Not a research variable. Audit and resolve identifying logs and potential response linkages before anonymity claims or launch. Service, residence, access and retention remain to be confirmed.\\
+Independent inquiries & A volunteer may contact the PI or REB using their own email/phone. & No inquiry is needed to enrol. Do not link correspondence to responses, solicit task answers or create a recruitment register. Follow institutional correspondence rules outside the research dataset.\\
+Synthetic materials & Invented evidence, fixed explanations, tasks, rubrics and software. & May be publicly shared. These are separate from participant text and records.\\
+\bottomrule
+\end{longtable}
+No age band, housing tenure, gender, ethnicity, income, address, diagnosis or real electricity use is collected. Eligibility verifies only the required self-reports. Optional background questions cover digital confidence, device/Internet access and prior use of energy information. No payment record, scheduling file, signed consent or identity-to-record key is created.
+
+\pending{Name the approved host, HTTPS endpoint, physical data residence, institutional storage and backup, access/encryption process, incident handling and provider-log configuration. Confirm the proposed five-year retention against applicable SFU/funder requirements. No participant records belong in GitHub, a personal cloud drive or an AI tool.}
+
+The design aims for anonymous research records, but indirect identification from text and actual infrastructure practices remains a risk until checked. If text contains identifying details, later redaction produces anonymized information; it does not prove the original submission was anonymous. Internet delivery also transiently handles network addressing, even when identifiers are not retained. Grouped results and general redacted paraphrases may appear in papers and a public summary. No raw participant dataset, raw quotation or unspecified future research is authorized. Institutional reviewers or the REB may inspect records for confidential oversight. Data protection covers collection through destruction~\cite{sfu-guidance,tcps-privacy}.
+
+\subsection{Withdrawal and unpaid participation}
+Before final submission, a respondent may decline, skip, exit or close the page without giving a reason. The local unsubmitted answers are discarded and no research record is sent. A clear confirmation immediately precedes submission. After final submission, the researcher cannot identify which anonymous packet belongs to a person. No retained withdrawal code, account or identity link exists, and individual responses cannot then be located and removed. This limit is disclosed before consent and again before Submit. Requests by email must not be used to match distinctive task answers to a person.
+
+The rationale supplied to the REB is that avoiding identity links, persistent return codes and identifying collection protects privacy for a public volunteer activity. This design sacrifices later individual data removal. TCPS 2 permits context-specific withdrawal limits where locating anonymous data is impossible, with a rationale to the REB and prior disclosure; it does not remove the requirement for voluntary participation~\cite{tcps-consent}. The consent draft must be approved with these exact limits.
+
+Participation is unpaid. There is no gift card, honorarium, travel reimbursement or financial record. The website charges no study fee; respondents supply their own device, connection and time, and their usual Internet charges may apply. TCPS 2 neither requires nor discourages incentives~\cite{tcps-incentives}. The PI must justify the unpaid burden and accessibility limits for this feasibility design; no claim that unpaid recruitment is socially representative is made.
+
+\section{Application preparation and launch checks}
+SFU-only studies currently use Kuali Protocols. The public guide identifies Humans, routing questions, PI, department, title, submission type and behavioural/clinical categorization~\cite{sfu-kuali}. The full conditional form and the PI's account were not accessed. This mapping prepares narrative topics rather than claiming verbatim knowledge of every field.
+\begin{longtable}{L{3.5cm}L{11.0cm}}
+\toprule
+Application topic & Prepared content and outstanding decision\\
+\midrule
+\endhead
+Administration & New online behavioural study; proposed minimal risk; target 16 valid completed paired records, not verified unique people. Confirm open period/closure rule; no recruitment before approval.\\
+Investigator & Stephen Makonin is the only investigator confirmed. Enter actual appointment, department, institutional contacts and CORE training. Adjunct/visiting eligibility may require an eligible sponsor or Head approval for REB consideration~\cite{sfu-pi}.\\
+Purpose and methods & Sections 1--3; twelve fixed tasks; four possible assignments; same own device for both views; prepared corpus, no live AI. Record selection and dependence limitations.\\
+Recruitment & Public social-media/open-link invitation after approval; no names, registration, DM enrolment or utility service pressure. Confirm channel permissions and posting period.\\
+Consent and withdrawal & Electronic affirmative action/version with final packet; no identifying signature/time; RAM before Submit; no individual removal afterwards. Explain rationale and obtain REB acceptance.\\
+Risk and compensation & Unpaid time/device/Internet burden; optional access questions; no real-home upload/control/recording/AI processing. Disclose developer/patent/funding conflicts.\\
+Privacy and retention & Host/HTTPS/residence/security/access/logging/backup unresolved; anonymous research dataset goal requires audit. Confirm five-year proposal and destruction; no identity/payment keys.\\
+Attachments & Protocol; current Survey-template consent; public invitation; eligibility screen; evidence/corpus/rubrics; questionnaires; browser flow; privacy audit and training/eligibility documentation.\\
+\bottomrule
+\end{longtable}
+SFU training guidance requires the current CORE tutorial for researchers seeking approval~\cite{sfu-training}. Confirm PI eligibility, Kuali access/MFA and any department approval. Check harmonized review requirements if another institution later joins. The PI must review and file the final application. No fabricated reference or submission status appears here.
+
+The old SFU WebSurvey service was decommissioned in 2024; its historical setup instructions are not a current hosting choice~\cite{sfu-websurvey}. SFU's current SurveyMonkey service is a possible institutional survey resource, but it has not been chosen, logged into or verified for this custom study, anonymity or data flow~\cite{sfu-surveymonkey}. A provider's Canadian-hosting statement alone does not verify absence of identifiable logs.
+
+Before collection, obtain written approval, complete the host/logging audit, freeze reviewed corpus/rubrics/practice/help/allocation/software, test the flow with invented researcher data, and verify keyboard/touch, contrast, scalable text, responsive layout, pauses and loss-of-unsubmitted-data warnings. Test one final transmission only and no partial saving or identifiers. Document actual device variation as a limitation. The standalone local REVIEW build includes orientation and all four task paths, but does not implement an approved collection backend, demonstrate at-rest encryption or constitute a deployed participant site. No human pilot begins outside approval.
+
+\appendix
+\newpage
+\section{Task sets and frozen scoring rubrics}\label{app:tasks}
+All values below are invented. Each task uses its own evidence card, labelled ``fictional household; study example.'' It is not an unbroken real household timeline. A and B have the same navigation and relevant evidence. Both presentations expose every required fact. Confirm the final display and corpus against these cards before freezing.
+
+\begin{longtable}{L{1.1cm}L{4.4cm}L{4.4cm}L{4.4cm}}
+\toprule
+Task & Set A evidence and question & Set B evidence and question & Rubric: one point per concept\\
+\midrule
+\endhead
+1 & Six-hour component estimates: load 7 (occupant-named dryer) 4.80 kWh; load 3, 2.40; load 12, 0.84; others 0.60. Meter total 9.20. Which estimated load used most? Is its value directly metered? & Six-hour component estimates: load 8 (occupant-named dishwasher) 4.20 kWh; load 4, 2.10; load 12, 0.72; others 0.48. Meter total 8.00. Same question. & Identifies load 7/dryer (A) or load 8/dishwasher (B). Says component value is an estimate; only the aggregate is directly metered.\\
+2 & Comparable complete 24-hour windows: earlier 4.80 kWh, later 6.00. Did use rise or fall, and by how many kWh? & Comparable complete 24-hour windows: earlier 6.00 kWh, later 7.50. Same question. & Increase. Difference +1.20 kWh (A) or +1.50 kWh (B); accept within 0.01 kWh. Percent not required.\\
+3 & Load 12: recurring 100 W spans. Candidate names ``refrigerator'' and ``freezer''; no occupant confirmation or reference check. Can it be called the refrigerator with certainty? What further information would help? & Load 12: recurring 120 W spans; same candidates and status. Same question. & Says identity remains uncertain and refrigeration is only a candidate. Suggests suitable extra evidence, e.g. occupant check or controlled observation; confidence alone is insufficient.\\
+4 & Six hours missing in a 24-hour window: 4.80 kWh observed over 18 hours; 75\% coverage. Is 4.80 kWh the complete day's measured consumption? & Same coverage: 6.30 kWh observed over 18 hours; 75\%. Same question. & Says value covers the observed 18 hours, not the entire day. Says a complete-day total cannot be established from this evidence; no exact extrapolation accepted.\\
+5 & Completed block: immediate load-7 estimate 3.20 kWh; post-block revised estimate 3.60; revision available only after the block ends. Does the difference mean additional measured energy? Could the revised value have been shown before the block ended? & Same timing, load-8 immediate 2.40; revised 2.80. Same question. & Point 1: the revision changes the estimate for the same period, not additional measured consumption. Point 2: the revised value was unavailable before the block ended.\\
+6 & Household comfort card: occupied rooms must remain at least 20\,$^\circ$C; latest acceptable laundry start is 21:00; refrigerator must remain powered for food storage. Options: lower occupied room to 17\,$^\circ$C; delay optional laundry to 20:00; turn off the refrigerator. Which option respects every stated limit? Can a saving be guaranteed? & Minimum 21\,$^\circ$C; latest acceptable dishwasher start is 22:00; freezer must remain powered for food storage. Options: lower occupied room to 18\,$^\circ$C; delay optional dishwashing to 21:00; turn off the freezer. Same question. & Chooses delaying optional laundry/dishwashing within allowed time. Says energy or cost saving is not guaranteed without an effect/tariff model; preserves all stated limits.\\
+\bottomrule
+\end{longtable}
+
+\textbf{Scoring rules.} Accept plain-language equivalents, spelling errors and named component IDs that express the required idea. Do not award a point merely for repeating a number without the requested interpretation. Record unsupported definitive labels, complete-day extrapolation and guaranteed savings as error flags even if another point is earned. Rubric disagreements are retained, not silently replaced. Correctness concerns the supplied evidence, not ground-truth NILM accuracy.
+
+\textbf{Corpus specification.} For every task, create a primary question and up to two relevant follow-up buttons. A canonical JSON record should contain task/set ID, evidence values and units, relative duration and any supplied interval boundaries, coverage, label status, immediate/revised status and availability, boundaries, comfort card, question, checked response, and rubric concepts. The dashboard reads the same record. A comparison script must verify these structured fields are identical across condition assets. Corpus generation, any AI model/prompt used before participants, author corrections and the final hash must be recorded. The participant view must indicate that responses are prepared study examples. A request outside the available examples returns ``This study example cannot answer that question.''
+
+
+\textbf{Evidence limits.} Use relative windows and null unspecified boundaries. Do not invent Task 2 measurement provenance or force Task 1 closure: component sums 8.64 kWh (A) and 7.50 kWh (B) differ from meter totals. Show aggregates separately. Both views show Task 4 missing coverage and Task 5 revision availability. This is a review artifact, not an approved freeze.
+
+\newpage
+\section{Public recruitment notice draft}\label{app:recruit}
+\textbf{Help us study how people understand home electricity information}
+
+Do you pay or share a Canadian household electricity bill and are you at least 19 years old? We invite you to try a readable dashboard and a conversational display called WattDialogue in an English-language online study.
+
+Use your own device and Internet connection for twelve tasks about invented households. The planning estimate is 30--45 minutes; slower reading, breaks or using the full task allowances can make it about an hour or longer. You may pause or skip questions. There is no payment and no study fee. Your usual Internet charges may apply. We ask you to participate only once and work independently using the information provided.
+
+We do not ask for your name, email, login, bill, income proof, utility account or home meter data. We do not record audio/video or send your answers to an AI service. The planned research dataset is anonymous. [Replace with the verified hosting/privacy statement after the institutional audit; do not issue this notice with an unverified anonymity promise.] Before final Submit, exiting discards your answers. Afterwards we cannot locate and remove your individual answers because there is no identity link or withdrawal code.
+
+Taking part is optional and does not affect services or your relationship with SFU. People who developed/tested WattDialogue, the PI's close family, and people currently directly supervised, employed, assessed or taught by him should not participate.
+
+Read the full information sheet and choose whether to join: \textbf{[approved HTTPS open study link]}. Please do not put your answers or personal details in public comments and do not register by direct message. For questions only: Stephen Makonin, [confirmed title/department], [institutional email and phone]. Study title: Understanding household energy estimates with WattDialogue. Ethics reference: [actual approved reference]. Post only after approval and confirmation of all brackets.
+
+\newpage
+\section{Eligibility screen and electronic entry}\label{app:screen}
+Show the complete information sheet first. ``Please read the study information before deciding. You can save or print it, or ask a question using the listed contacts. We do not need your name or contact details to take part.'' Offer ``I agree to take part'' and ``I do not agree; exit.'' The affirmative action/version is held only in page memory until final submission.
+
+After agreement, ask the following self-reports, each with Yes / No / Prefer not to answer:
+\begin{enumerate}
+\item Are you 19 years old or older?
+\item Do you live in a residential household in Canada and pay or share responsibility for its electricity bill?
+\item Can you understand the English study information and tasks using the website options and your usual accessibility tools?
+\item Have you helped develop or previously test WattDialogue, are you a close family member of Stephen Makonin, or are you currently directly supervised, employed, assessed or taught by him?
+\end{enumerate}
+Eligibility requires Yes to the first three and No to the fourth. Otherwise show a neutral explanation of the current scope and an Exit button; send no eligibility record or research answer. Do not collect identity evidence or seek a private explanation. Host access logging is addressed by the prelaunch audit, not by an application promise that no network request occurs.
+
+Eligible respondents are allocated in their browser to one of the four paths. No allocation, consent or background packet is sent before final Submit. State that reloading or closing will lose unfinished answers and that there is no saved return link.
+
+\newpage
+\section{Study information and consent form draft}\label{app:consent}
+\textbf{For author completion before issue.} This version follows SFU's current Survey template section order. Complete all brackets, verify actual host/privacy/retention arrangements, explain protected-wording changes and obtain approval before issuing the website or form. The archived v0.1 Interview attachment is superseded. No reference number is invented.
+
+\textbf{Study title:} Understanding household energy estimates with WattDialogue: a feasibility comparison of a conversational display and a readable dashboard.\\
+\textbf{Research Ethics Study Number:} [unassigned; REVIEW draft, not submitted or approved].\\
+\textbf{Principal Investigator:} Stephen Makonin, [confirmed title and department], [institutional email and phone].\\
+\textbf{Research team:} Stephen Makonin is the only investigator.
+
+\subsection*{Funding and Conflict of Interest}
+Funding: [confirm source and grant/account, or verify that there is no external funding]. Stephen Makonin developed WattDialogue and has a related patent-pending application. Findings may inform further development or commercialization. Problems and negative feedback will be reported along with useful features. [Confirm any other financial or commercial interests.]
+
+\subsection*{Invitation and Purpose}
+We invite adults aged 19 or older who pay or share a Canadian household electricity bill. We want to learn how residents understand estimated electricity use when it appears as a readable dashboard or answers to predefined questions. The target is 16 completed response records; this open-link study does not verify each respondent's identity. [Insert the approved opening/closing period.]
+
+If you agree, you will use your own device and Internet connection for twelve tasks, six in each format, with practice, ratings and optional written feedback. The planning estimate is 30--45 minutes; using all task allowances, reading slowly or taking breaks may make it about an hour or longer. You may pause, extend time or skip questions. Use the same device for both formats and work independently using the supplied information. Closing or reloading loses answers that have not been submitted.
+
+All homes and energy values are invented. Answers in the conversational view are prepared study examples, not live AI chat. We do not send your words to OpenAI or another AI service. You will not upload a bill or real home data, and no appliance is controlled. There is no audio/video, microphone, camera or screen recording. Participation needs your own accessible device and connection; we do not supply equipment for this web study.
+
+\subsection*{Risks and Benefits}
+The display and tasks may be tiring, frustrating or difficult. We are assessing the presentation, not grading your ability. You can take a break, skip questions or exit. Optional technology-access questions may be skipped; no income amount or hardship history is requested. Participation is unpaid and uses your time and usual Internet service. We cannot promise a direct benefit or savings. What we learn may help improve future energy information.
+
+There is a small privacy risk if you type personal information into an answer. Please discuss only the invented examples, without names, addresses, account details or details about other people. The actual website's hosting and privacy arrangements must be confirmed before use: [insert verified host, data residence and identifying-log handling]. An anonymous research dataset is planned; this REVIEW form does not establish anonymity of an unselected host.
+
+\subsection*{Your Rights as a Research Participant}
+Taking part is entirely your choice. Declining, skipping or stopping will not affect your electricity service, benefits, housing, employment, education or relationship with SFU. You may ask questions using the contacts on this form before deciding. No name, signature, login or email is required to participate.
+
+Before the final ``Submit my anonymous responses'' action, your answers remain in this page's memory. Exit or close the page to discard them without sending a research record. There is no saved return link. After final submission, we cannot identify which record is yours and cannot remove your individual answers: no identity link or retained withdrawal code is created. This is a privacy choice, and you should submit only if you accept this limit. You can review this information again before Submit. Contacting us later does not make it possible to locate an anonymous record.
+
+\subsection*{Data Collection, Storage, Access, and Destruction}
+The final submitted packet records your agreement and consent-form version, eligible self-reports, condition assignment, practice completion or skip, task answers, confidence, relative time taken, help requested, text-scale changes, skips or reported faults, optional technology-access categories, ratings and written feedback. We do not record your name, signature, email, IP address, user-agent string, device fingerprint, precise calendar time, bill, income, account number, address or age band in the research application. It uses no tracking cookies, persistent browser storage or analytics. No partial answers are saved to the research server.
+
+Stephen Makonin will access the research records in [approved institutional host/storage, physical data residence and backup]. [Specify verified HTTPS, access controls, encryption and host, proxy, CDN and security-log handling before issue.] The proposed retention is five years after study completion, then secure deletion including backups; confirm this schedule before use. No participant record is sent to an AI service, utility, manufacturer, public GitHub repository or personal cloud drive. Hosting practices must be checked separately because a website provider can log access even when the research application does not.
+
+Results may appear as grouped findings and general redacted paraphrases in papers and at [confirmed public summary page after publication]. Personal details accidentally included in text will be removed. We will not release raw participant files or raw quotations. This consent does not permit unspecified future research. Public software and invented examples contain no participant answers. No identity key, contact list, payment record or signed consent form is created.
+
+\subsection*{Privacy and Confidentiality}
+Privacy laws and institutional controls protect study records, but absolute secrecy cannot be guaranteed. Response combinations or personal details in text may allow identification; we will combine small categories and redact such details. [Confirm actual hosting, residence, logs and any legally required disclosures before issue.] SFU's Research Ethics Board or authorized institutional reviewers may inspect records under confidentiality obligations to oversee the study. By agreeing and finally submitting, you authorize the record access described here.
+
+If you independently contact the PI or the ethics office, they will see the contact details you use. Contact is not required to participate, and correspondence will not be linked to research responses. Please do not send task answers or personal household data. Social-media services have their own practices for public posts and interactions; please do not leave study answers or personal information in comments. No study data is sent to an AI provider. [Confirm whether any study data crosses Canadian borders and provide the required disclosure if it does.]
+
+\subsection*{Costs, Reimbursement and Compensation}
+There is no study fee. This is an unpaid study: no gift card, honorarium or reimbursement is offered. You use your own device, Internet connection and time; your normal connection or data charges may apply. You may decline or exit before submission without penalty.
+
+\subsection*{Questions}
+For questions before deciding or concerns about the study, contact Stephen Makonin using the verified details above. Participation does not require contacting him. Do not send task answers to request deletion; an anonymous submitted record cannot be located from your identity.
+
+For questions about participant rights or privacy, contact the Director, Research Ethics and Security at \href{mailto:hreb@sfu.ca}{hreb@sfu.ca}. Give the study title, actual reference number and PI name so staff can assist you. [Supply a verified telephone alternative if available.]
+
+\subsection*{Consent}
+I have read and understood this form. I choose voluntarily to take part and agree to the collection, use and oversight access described here. I understand that the examples and responses are prepared, participation is unpaid, my own device/connection is required, and I can discard my answers before final submission. I understand that afterwards my individual answers cannot be located and removed because no identity link or withdrawal code exists. Agreeing does not remove my legal rights in the event of research-related harm.
+
+\textbf{I agree to take part -- proceed to eligibility and tasks.}\\
+\textbf{I do not agree -- exit without submitting research data.}
+
+This choice is held in browser memory. The final review screen repeats the withdrawal limit and provides ``Submit my anonymous responses'' or ``Exit and discard.'' Only final submission sends the complete research packet, including the affirmative consent action and form version. No identifying signature, calendar timestamp or name is requested. The approved information sheet remains available to print or save.
+
+\newpage
+\section{Questionnaire and optional written feedback}\label{app:survey}
+\subsection*{Before practice}
+Each question is optional and includes ``prefer not to answer.'' No documents are requested:
+\begin{enumerate}
+\item Confidence using a digital display: very low / low / moderate / high / very high.
+\item Reliable access to a personal device for viewing energy information: yes / sometimes / no.
+\item Reliable home Internet access: yes / sometimes / no.
+\item Prior use of energy charts or an energy app: never / occasionally / often.
+\end{enumerate}
+No age band, housing tenure, gender, ethnicity, income, address, diagnosis or real energy use is collected. Eligibility establishes only the required self-reports. Optional access answers from web volunteers cannot describe residents who could not open the study.
+
+\subsection*{After each task and view}
+``Give the answer in your own words, about this invented example only. Do not include personal details.'' Ask confidence from 0 (not confident) to 100 (completely confident), identically in both views. Relative timing, requested help, skips, limits/extensions and reported faults are recorded automatically only in page memory until Submit. After each view, optionally rate finding information, understanding it and confidence about uncertainty from 1 to 5. These are study-specific items.
+
+\subsection*{Optional final written feedback}
+\begin{enumerate}
+\item Which format helped most, and why? ``No preference'' is acceptable.
+\item When, if ever, could you not tell whether a name or number was certain?
+\item Did wording, text size, layout, touch targets or input controls make a task harder?
+\item If a utility supplied a display without needing your own device or Internet service, what might still make it difficult to use? Discuss this generally, without private financial details.
+\item What should the display explain before suggesting a change that could affect comfort?
+\end{enumerate}
+There is no interview, observer or speech transcription. Questions may be skipped. Do not ask unapproved questions about financial distress or actual household bills. PI analysis uses redacted paraphrases, not distinctive quotations.
+
+\section{Website review and collection checklist}\label{app:session}
+\begin{enumerate}
+\item Before public recruitment: verify written approval, contacts, final consent/invitation, hosting/logging/residence audit and institutional security/storage arrangements.
+\item Freeze checked synthetic corpus, shared evidence, rubrics, help/practice content, allocation method and software/analysis versions. Test all four paths using invented researcher responses only.
+\item Verify no API calls, identifiers, analytics, cookies, persistent storage, recording, external assets or partial-response transmission. Verify one final complete submission and response-storage controls on the approved host before launch.
+\item Present consent before eligibility/data entry; no name, signature, login, email, calendar time or withdrawal token. Do not retain failed eligibility or incomplete visits as research records.
+\item Provide text scaling, keyboard/touch operation, clear focus, readable evidence and responsive layout. Verify same content and options across views and explain pause/close data loss.
+\item Run practice, first six tasks/ratings, optional break and continued consent choice, then second practice and six tasks/ratings. Do not give correctness grades or individualized scored-task feedback between views; prepared interpretations remain part of both interfaces.
+\item Offer optional written feedback. Show final review and explain no individual removal after Submit. Allow Exit/discard. Submit the complete packet only with the explicit final action.
+\item PI checks structural validity, redacts accidental identifiers and scores answer-only shuffled records. Report actual allocation counts, faults, denominator exclusions and repeat/bot limitations without assuming unique people.
+\item Secure records and backups under the confirmed retention schedule. No raw public release, contact joining, payment files or later identity-based withdrawal lookup.
+\end{enumerate}
+
+\textbf{Planned final research fields.} Consent version/action; eligibility self-reports; allocation/corpus version; twelve task IDs and view/set; practice completion/skip; status; relative active/elapsed durations; short answer; optional confidence; requested help/text-scale/limit/skip/fault events; optional four access categories; view ratings; optional feedback. Internal database row references must not become participant-linked return/deletion codes or contain identifying transport metadata. A schema and reviewed implementation will define exact valid ranges before collection.
+
+\section{Separate orientation and exact help materials}\label{app:practice}
+These invented orientation cards are separate from Appendix A and are not NILM results. P1 precedes the first format and P2 the second, regardless of assignment. Both views show the same practice facts and interpretations. They teach reading a value, finding a prepared question and using the answer/pause/skip controls, without grading understanding or rehearsing a scored uncertainty/comfort decision.
+
+\begin{longtable}{L{1cm}L{6.6cm}L{6.6cm}}
+\toprule
+Card & Facts and practice question & Prepared explanation and feedback\\
+\midrule
+\endhead
+P1 & Illustrative energy: 1.50 kWh. Relative period: 3 hours; no actual date or home. Source/status: invented orientation illustration; measurement provenance not supplied. Question: What energy value is shown? Enter the number and unit; this practice is not scored. & Primary: The invented illustration shows 1.50 kWh for a relative 3-hour period. Follow-up period: The relative period is 3 hours. No actual date is provided. Follow-up household: No. This is a separate invented orientation illustration, not a real home or NILM identity result.\\
+P2 & Same fields and question; 2.00 kWh over a relative 4 hours. Same invented status and unprovided provenance. & Same templates: 2.00 kWh and 4 hours. Same household explanation.\\
+\bottomrule
+\end{longtable}
+No appliance identity is supplied in either practice. Both views explicitly say that the values are illustrative and that measurement provenance is not supplied. The dialogue offers ``What energy value is shown?'', ``How long is the example period?'' and ``Is this my household?''; the dashboard shows their same prepared interpretations below its table.
+
+\textbf{Practice feedback.} ``The illustrated value is [1.50 / 2.00] kWh. In either format, the same value appears in the evidence table. This answer is not scored or retained.'' Then explain: ``For scored tasks, enter an answer, then confidence. Skip leaves a task unanswered. Pause and tab hiding stop the visible/unpaused timer; closing or Exit discards the whole unsubmitted packet.'' Practice has no scored timer or confidence rating. The typed practice answer is cleared before feedback. Only completion/skip, practice ID, view and relative events are retained. Skipping practice does not exclude a submission on performance grounds.
+
+\textbf{Exact requested-help ladder.} Both views provide the same four options, backed by the frozen task card rather than new inference:
+\begin{enumerate}
+\item \emph{Repeat task/input instructions.} Repeat the displayed task question, then: ``Enter a short answer in the answer box. Hold the answer to give confidence, or choose Skip task, Pause, or Exit and discard.''
+\item \emph{Navigation guidance.} ``The evidence table precedes the answer form. In dialogue, question buttons open prepared explanations; in the dashboard, explanations follow the evidence table. Both show the same underlying information.''
+\item \emph{Locate evidence.} Use the exact task-specific text below, identically for A and B.
+\item \emph{Show prepared energy explanation.} Show that task card's fixed primary explanation, already available in the dashboard interpretation and dialogue's primary question. Record this explicit help request separately from ordinary access to the view. It adds no new evidence or appliance confirmation.
+\end{enumerate}
+\begin{longtable}{L{1cm}L{13.2cm}}
+\toprule
+Task & Exact level-3 evidence-location text\\
+\midrule
+\endhead
+1 & Look at the component-estimate rows and the separate aggregate meter total, then the label status and uncertainty. The aggregate and component values describe different evidence types.\\
+2 & Look at the earlier and later energy values and their complete, comparable 24-hour windows. Measurement provenance is not supplied.\\
+3 & Look at the recurring-power description, the two candidate names and the unconfirmed label status. The identity has no occupant or reference confirmation.\\
+4 & Look at observed energy, observed hours, expected hours and 75\% coverage. Six hours are missing.\\
+5 & Look at the immediate and revised estimates for the same block and the revision-availability statement. Block duration and absolute boundaries are not supplied.\\
+6 & Look at the minimum occupied-room temperature, latest permitted activity start, food-storage requirement and three options. Then check uncertainty about savings.\\
+\bottomrule
+\end{longtable}
+These texts locate or interpret already available information. The timer continues while requested guidance is open. All levels are requests, not observed assistance. Level 3 or 4 flags the specified sensitivity summary; it does not change the primary scoring rule. Normal prepared-question access is a feature of dialogue and is not classified as a separate help request. The generic unsupported-question response appears only for an unsupported request; it is not displayed below a valid prepared answer. PI review of exact assets, fairness and accessibility is required before a participant freeze.
+
+\section{Sources and author verification}
+Official sources were checked on 30 September 2026. Sample size, unpaid burden, retention, tasks and analysis are study choices, not universal SFU requirements. The full conditional Kuali form and PI account were not accessed. The official 2026 Survey template and instructions are retained unchanged as references; current documents must be checked at actual submission. Resolve all brackets before issuing materials. The old in-person/paid attachment is archived for version history, not usable for this web study.
+
+\begin{thebibliography}{99}
+\bibitem{rights} S. Makonin, L. Guzman Flores, R. Gill, R. A. Clapp, L. Bartram and B. Gill, ``A Consumer Bill of Rights for Energy Conservation,'' \emph{Proc. IEEE Canada International Humanitarian Technology Conference}, 2014, pp. 1--6, doi: 10.1109/IHTC.2014.7147535.
+\bibitem{sfu-policy} Simon Fraser University, ``Ethics Review of Research Involving Human Participants,'' Policy R20.01, amended Nov. 30, 2023, sec. 5.2.1. \url{https://www.sfu.ca/about/leadership-governance-strategy/policies/gazette/r20-01.html}.
+\bibitem{sfu-review} Simon Fraser University, ``Application \& Review.'' \url{https://www.sfu.ca/research/researcher-resources/manage-my-research/human-ethics/application-overview.html}.
+\bibitem{sfu-pi} Simon Fraser University, ``Principal Investigator Eligibility Criteria for Research Involving Human Participants,'' Mar. 24, 2025. \url{https://www.sfu.ca/content/dam/sfu/main/research/researcher-resources/Documents/2025.03.24.PrincipalInvestigatorEligibilityCriteria.pdf}.
+\bibitem{sfu-training} Simon Fraser University, ``Training \& Education.'' \url{https://www.sfu.ca/research/researcher-resources/manage-my-research/human-ethics/training-education.html}.
+\bibitem{sfu-kuali} Simon Fraser University, ``How to Create and Submit a New Ethics Application,'' Apr. 22, 2025. \url{https://www.sfu.ca/content/dam/sfu/main/research/researcher-resources/Documents/20250422.QuickGuide-NewApplicationforFaculty.pdf}.
+\bibitem{sfu-consent} Simon Fraser University, ``Informed Consent Form Instructions,'' v01, and ``Consent Form Template -- Survey,'' v02, 2026. \url{https://www.sfu.ca/research/researcher-resources/manage-my-research/human-ethics/resources-guidance.html}.
+\bibitem{sfu-guidance} Simon Fraser University, ``Resources \& Guidance.'' \url{https://www.sfu.ca/research/researcher-resources/manage-my-research/human-ethics/resources-guidance.html}.
+\bibitem{tcps-consent} Canadian Institutes of Health Research, Natural Sciences and Engineering Research Council of Canada and Social Sciences and Humanities Research Council of Canada, \emph{TCPS 2: Ethical Conduct for Research Involving Humans}, 2022, ch. 3, arts. 3.1, 3.2, 3.5 and 3.12. \url{https://ethics.gc.ca/eng/tcps2-eptc2_2022_chapter3-chapitre3.html}.
+\bibitem{tcps-incentives} Panel on Research Ethics, ``Interpretations of the TCPS 2 -- Consent,'' interpretation 6. \url{https://ethics.gc.ca/eng/policy-politique_interpretations_consent-consentement.html}.
+\bibitem{tcps-privacy} Same agencies, \emph{TCPS 2}, 2022, ch. 5, arts. 5.1--5.3. \url{https://ethics.gc.ca/eng/tcps2-eptc2_2022_chapter5-chapitre5.html}.
+\bibitem{sfu-websurvey} SFU IT Services, ``SFU WebSurvey,'' service decommissioned July 31, 2024. \url{https://sfu.teamdynamix.com/TDClient/255/ITServices/Requests/ServiceDet?ID=2185}.
+\bibitem{sfu-surveymonkey} SFU IT Services, ``SurveyMonkey.'' \url{https://sfu.teamdynamix.com/TDClient/255/ITServices/Requests/Service/2396/SurveyMonkey}.
+\end{thebibliography}
+\end{document}

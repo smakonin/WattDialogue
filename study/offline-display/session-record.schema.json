@@ -1,0 +1,439 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WattDialogue anonymous-flow synthetic researcher-testing export",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "record_kind": {
+      "const": "synthetic_researcher_test"
+    },
+    "study_status": {
+      "const": "REVIEW_NOT_APPROVED"
+    },
+    "export_notice": {
+      "type": "string"
+    },
+    "assignment_id": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4
+    },
+    "corpus_sha256": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "complete": {
+      "type": "boolean"
+    },
+    "consent": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "action": {
+          "const": "I agree to take part"
+        }
+      },
+      "required": [
+        "version",
+        "action"
+      ],
+      "additionalProperties": false
+    },
+    "eligibility": {
+      "type": "object",
+      "properties": {
+        "adult": {
+          "const": "yes"
+        },
+        "canadian_billpayer": {
+          "const": "yes"
+        },
+        "english_understanding": {
+          "const": "yes"
+        },
+        "excluded_relationship": {
+          "const": "no"
+        }
+      },
+      "required": [
+        "adult",
+        "canadian_billpayer",
+        "english_understanding",
+        "excluded_relationship"
+      ],
+      "additionalProperties": false
+    },
+    "background": {
+      "type": "object",
+      "properties": {
+        "digital_confidence": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "device_access": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "internet_access": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "prior_energy_display_use": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "tasks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "card_id": {
+            "type": "string"
+          },
+          "task": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 6
+          },
+          "set": {
+            "enum": [
+              "A",
+              "B"
+            ]
+          },
+          "condition": {
+            "enum": [
+              "dashboard",
+              "dialogue"
+            ]
+          },
+          "condition_number": {
+            "enum": [
+              1,
+              2
+            ]
+          },
+          "status": {
+            "enum": [
+              "completed",
+              "skipped",
+              "technical_fault",
+              "timed_out",
+              "stopped_session"
+            ]
+          },
+          "answer": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "confidence": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 100
+              }
+            ]
+          },
+          "active_ms": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "elapsed_ms": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "limit_ms": {
+            "type": "integer",
+            "minimum": 180000
+          },
+          "help_max": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 4
+          },
+          "help_events": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "level": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 4
+                },
+                "elapsed_ms": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "level",
+                "elapsed_ms"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "optional_task_note": {
+            "type": "string"
+          },
+          "prepared_questions_opened": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "accommodation_extensions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "additional_ms": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "elapsed_ms": {
+                  "type": "integer",
+                  "minimum": 0
+                }
+              },
+              "required": [
+                "additional_ms",
+                "elapsed_ms"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "card_id",
+          "task",
+          "set",
+          "condition",
+          "condition_number",
+          "status",
+          "answer",
+          "confidence",
+          "active_ms",
+          "elapsed_ms",
+          "limit_ms",
+          "help_max",
+          "help_events",
+          "optional_task_note",
+          "prepared_questions_opened",
+          "accommodation_extensions"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 12
+    },
+    "condition_ratings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "condition": {
+            "enum": [
+              "dashboard",
+              "dialogue"
+            ]
+          },
+          "set": {
+            "enum": [
+              "A",
+              "B"
+            ]
+          },
+          "find": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+              }
+            ]
+          },
+          "understand": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+              }
+            ]
+          },
+          "uncertainty": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "integer",
+                "minimum": 1,
+                "maximum": 5
+              }
+            ]
+          }
+        },
+        "required": [
+          "condition",
+          "set",
+          "find",
+          "understand",
+          "uncertainty"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 2
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "elapsed_ms": {
+            "type": "integer",
+            "minimum": 0
+          }
+        },
+        "required": [
+          "type",
+          "elapsed_ms"
+        ],
+        "additionalProperties": true
+      }
+    },
+    "practice_completion": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "practice_id": {
+            "enum": [
+              "P1",
+              "P2"
+            ]
+          },
+          "condition": {
+            "enum": [
+              "dashboard",
+              "dialogue"
+            ]
+          },
+          "condition_number": {
+            "enum": [
+              1,
+              2
+            ]
+          },
+          "status": {
+            "enum": [
+              "completed",
+              "skipped"
+            ]
+          }
+        },
+        "required": [
+          "practice_id",
+          "condition",
+          "condition_number",
+          "status"
+        ],
+        "additionalProperties": false
+      },
+      "maxItems": 2
+    },
+    "feedback": {
+      "type": "object",
+      "properties": {
+        "item_1": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "item_2": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "item_3": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "item_4": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "item_5": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [],
+      "additionalProperties": false
+    },
+    "submission_simulated": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "record_kind",
+    "study_status",
+    "export_notice",
+    "assignment_id",
+    "corpus_sha256",
+    "stage",
+    "complete",
+    "consent",
+    "eligibility",
+    "background",
+    "tasks",
+    "condition_ratings",
+    "events",
+    "practice_completion",
+    "feedback",
+    "submission_simulated"
+  ],
+  "additionalProperties": false
+}

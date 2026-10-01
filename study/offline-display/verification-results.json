@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "scope": "Schema/source integrity checks, not institutional hosting/privacy approval",
+  "schema_validation": "Dependency-free validation of all keywords used by the three supplied schemas",
+  "invented_cards": 12,
+  "separate_practice_cards": 2,
+  "exact_help_levels": 4,
+  "review_exports_validated": 4,
+  "task_table_byte_equal_to_v01": true,
+  "shared_evidence_verified": true,
+  "no_outbound_or_persistent_storage_calls": true,
+  "csp_inline_hashes_verified": true,
+  "corpus_sha256": "c2b6d71e09cb725751ed176aeb99c56bf9f8825943564db05e712f6e8cb3cd46",
+  "protocol_sha256": "7fa7b870d8c61c6f00b8c66bd2dcf8ce205351d1accea26fa6f8e1cb07d8f491"
+}

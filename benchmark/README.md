@@ -241,3 +241,7 @@ JSONL, protocol/manifests, private targets, source archives and run outputs are
 excluded. `.gitignore` supports that boundary but an explicit file allowlist is the
 final protection when creating an export. Preserved private research products are
 not examples or assets for a public release.
+
+## Engineering performance
+
+The [engineering guide](ENGINEERING.md) documents the portable synthetic HTTP soak, in-flight revision, resident-array scaling, simulated-provider recovery and browser timing runners. They are separate from the paid model evaluation above.

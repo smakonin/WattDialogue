@@ -1,0 +1,1348 @@
+{
+  "schema_version": "1.0",
+  "artifact_status": "STUDY REVIEW — not approved for participant collection",
+  "fictional": true,
+  "protocol_file": "WattDialogue_Participant_Protocol_and_Ethics_Draft.tex",
+  "protocol_sha256": "7fa7b870d8c61c6f00b8c66bd2dcf8ce205351d1accea26fa6f8e1cb07d8f491",
+  "appendix_sha256": "73b1aa503b97477381e47874dd870e0a796ac1b72fb6f41288b977d56f3fe9ee",
+  "prepared_by": "Codex-assisted software preparation; PI review pending",
+  "live_inference": false,
+  "unknown_question_response": "This study example cannot answer that question.",
+  "assignments": [
+    {
+      "id": 1,
+      "conditions": [
+        {
+          "view": "dashboard",
+          "set": "A"
+        },
+        {
+          "view": "dialogue",
+          "set": "B"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "conditions": [
+        {
+          "view": "dialogue",
+          "set": "A"
+        },
+        {
+          "view": "dashboard",
+          "set": "B"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "conditions": [
+        {
+          "view": "dashboard",
+          "set": "B"
+        },
+        {
+          "view": "dialogue",
+          "set": "A"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "conditions": [
+        {
+          "view": "dialogue",
+          "set": "B"
+        },
+        {
+          "view": "dashboard",
+          "set": "A"
+        }
+      ]
+    }
+  ],
+  "review_allocation": {
+    "seed": 20260930,
+    "algorithm": "Python random.Random; shuffle each block of four",
+    "sequence": [
+      3,
+      1,
+      2,
+      4,
+      1,
+      2,
+      4,
+      3,
+      3,
+      2,
+      4,
+      1,
+      1,
+      2,
+      3,
+      4,
+      3,
+      2,
+      4,
+      1
+    ],
+    "status": "Researcher path-testing only; web design uses browser-side equal-probability allocation, not this enrolment queue"
+  },
+  "cards": [
+    {
+      "id": "A1",
+      "set": "A",
+      "task": 1,
+      "title": "Estimated loads and the meter",
+      "prompt": "Which estimated load used most? Is its value directly metered?",
+      "fictional": true,
+      "source": {
+        "document": "WattDialogue_Participant_Protocol_and_Ethics_Draft.tex",
+        "appendix": "Task sets and frozen scoring rubrics",
+        "row": 1
+      },
+      "evidence": {
+        "facts": [
+          {
+            "label": "Window",
+            "text": "Six hours; absolute start and end are not supplied.",
+            "role": "interval",
+            "number": 6,
+            "unit": "h"
+          },
+          {
+            "label": "Load 7 (dryer)",
+            "text": "4.80 kWh · component estimate",
+            "role": "component_estimate",
+            "number": 4.8,
+            "unit": "kWh"
+          },
+          {
+            "label": "Load 3",
+            "text": "2.40 kWh · component estimate",
+            "role": "component_estimate",
+            "number": 2.4,
+            "unit": "kWh"
+          },
+          {
+            "label": "Load 12",
+            "text": "0.84 kWh · component estimate",
+            "role": "component_estimate",
+            "number": 0.84,
+            "unit": "kWh"
+          },
+          {
+            "label": "Other components",
+            "text": "0.60 kWh · component estimate",
+            "role": "component_estimate",
+            "number": 0.6,
+            "unit": "kWh"
+          },
+          {
+            "label": "Whole-home meter total",
+            "text": "9.20 kWh · directly metered aggregate",
+            "role": "aggregate_meter",
+            "number": 9.2,
+            "unit": "kWh"
+          },
+          {
+            "label": "Appliance name",
+            "text": "Load 7 is occupant-named dryer. Other load names are not supplied.",
+            "role": "identity",
+            "number": null,
+            "unit": null
+          }
+        ],
+        "intervals": [
+          {
+            "name": "Six-hour window",
+            "start": null,
+            "end": null,
+            "duration_hours": 6,
+            "boundary_status": "Relative six-hour duration only"
+          }
+        ],
+        "coverage": null,
+        "label_status": "Occupant-named dryer; reference verification not specified. Other components unlabelled.",
+        "uncertainty": "Component energy is estimated. Names are distinct from measured energy. Coverage and reconciliation of the component sum with the meter are not specified.",
+        "revision": null,
+        "comfort": null,
+        "bars": [
+          {
+            "label": "Load 7 (dryer)",
+            "value": 4.8,
+            "unit": "kWh",
+            "role": "component_estimate"
+          },
+          {
+            "label": "Load 3",
+            "value": 2.4,
+            "unit": "kWh",
+            "role": "component_estimate"
+          },
+          {
+            "label": "Load 12",
+            "value": 0.84,
+            "unit": "kWh",
+            "role": "component_estimate"
+          },
+          {
+            "label": "Other components",
+            "value": 0.6,
+            "unit": "kWh",
+            "role": "component_estimate"
+          }
+        ],
+        "boundary_note": "Absolute timestamps were not supplied in the protocol. Relative durations and availability are shown without invented dates."
+      },
+      "questions": [
+        {
+          "id": "primary",
+          "label": "Which estimated load used most? Is its value directly metered?",
+          "response": "Load 7, occupant-named dryer, has the largest component estimate: 4.80 kWh. That component value is estimated, not directly metered. The 9.20 kWh whole-home meter total is the directly measured aggregate."
+        },
+        {
+          "id": "followup1",
+          "label": "What does the meter total mean?",
+          "response": "The 9.20 kWh total is measured for the whole home. The individual load values are component estimates. The protocol does not require their displayed sum to equal that total."
+        },
+        {
+          "id": "followup2",
+          "label": "What is known about the names?",
+          "response": "An occupant supplied the name dryer for load 7. Reference verification is not specified. Names for the remaining components are not supplied."
+        }
+      ],
+      "rubric": [
+        "Identifies load 7 / dryer.",
+        "States that the component value is an estimate; only the aggregate is directly metered."
+      ],
+      "review_status": "Software checked against Appendix A; PI review and final study freeze pending."
+    },
+    {
+      "id": "A2",
+      "set": "A",
+      "task": 2,
+      "title": "Comparing complete windows",
+      "prompt": "Did use rise or fall, and by how many kWh?",
+      "fictional": true,
+      "source": {
+        "document": "WattDialogue_Participant_Protocol_and_Ethics_Draft.tex",
+        "appendix": "Task sets and frozen scoring rubrics",
+        "row": 2
+      },
+      "evidence": {
+        "facts": [
+          {
+            "label": "Earlier window",
+            "text": "4.80 kWh · reported energy",
+            "role": "reported_energy",
+            "number": 4.8,
+            "unit": "kWh"
+          },
+          {
+            "label": "Later window",
+            "text": "6.00 kWh · reported energy",
+            "role": "reported_energy",
+            "number": 6.0,
+            "unit": "kWh"
+          },
+          {
+            "label": "Comparison",
+            "text": "Comparable complete 24-hour windows.",
+            "role": "interval",
+            "number": 24,
+            "unit": "h"
+          },
+          {
+            "label": "Measurement source",
+            "text": "The protocol does not specify component versus aggregate measurement.",
+            "role": "provenance",
+            "number": null,
+            "unit": null
+          }
+        ],
+        "intervals": [
+          {
+            "name": "Earlier window",
+            "start": null,
+            "end": null,
+            "duration_hours": 24,
+            "boundary_status": "Earlier complete window; absolute dates absent"
+          },
+          {
+            "name": "Later window",
+            "start": null,
+            "end": null,
+            "duration_hours": 24,
+            "boundary_status": "Later complete window; absolute dates absent"
+          }
+        ],
+        "coverage": {
+          "observed_hours": 24,
+          "expected_hours": 24,
+          "percent": 100,
+          "scope": "each window"
+        },
+        "label_status": "No appliance identity is supplied for this task.",
+        "uncertainty": "The change is calculable from the supplied values. Measurement provenance and the cause of change are not supplied.",
+        "revision": null,
+        "comfort": null,
+        "bars": [
+          {
+            "label": "Earlier window",
+            "value": 4.8,
+            "unit": "kWh",
+            "role": "reported_energy"
+          },
+          {
+            "label": "Later window",
+            "value": 6.0,
+            "unit": "kWh",
+            "role": "reported_energy"
+          }
+        ],
+        "boundary_note": "Absolute timestamps were not supplied in the protocol. Relative durations and availability are shown without invented dates."
+      },
+      "questions": [
+        {
+          "id": "primary",
+          "label": "Did use rise or fall, and by how many kWh?",
+          "response": "Use rose by 1.20 kWh: 6.00 minus 4.80 kWh. Both windows are complete and cover 24 hours. These values show a change, but do not identify its cause."
+        },
+        {
+          "id": "followup1",
+          "label": "How was the difference found?",
+          "response": "Subtract the earlier value from the later value: 6.00 − 4.80 = +1.20 kWh."
+        },
+        {
+          "id": "followup2",
+          "label": "Does the change explain its cause?",
+          "response": "No. The task supplies comparable energy values, without an appliance cause, tariff or saving model."
+        }
+      ],
+      "rubric": [
+        "Identifies an increase.",
+        "Gives +1.20 kWh, accepting a difference within 0.01 kWh."
+      ],
+      "review_status": "Software checked against Appendix A; PI review and final study freeze pending."
+    },
+    {
+      "id": "A3",
+      "set": "A",
+      "task": 3,
+      "title": "A name that remains uncertain",
+      "prompt": "Can it be called the refrigerator with certainty? What further information would help?",
+      "fictional": true,
+      "source": {
+        "document": "WattDialogue_Participant_Protocol_and_Ethics_Draft.tex",
+        "appendix": "Task sets and frozen scoring rubrics",
+        "row": 3
+      },
+      "evidence": {
+        "facts": [
+          {
+            "label": "Component",
+            "text": "Load 12",
+            "role": "component",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Power pattern",
+            "text": "Recurring 100 W spans; span times and durations are not supplied.",
+            "role": "component_power",
+            "number": 100,
+            "unit": "W"
+          },
+          {
+            "label": "Candidate names",
+            "text": "Refrigerator or freezer",
+            "role": "identity",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Occupant confirmation",
+            "text": "None",
+            "role": "identity",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Reference check",
+            "text": "None",
+            "role": "identity",
+            "number": null,
+            "unit": null
+          }
+        ],
+        "intervals": [
+          {
+            "name": "Recurring spans",
+            "start": null,
+            "end": null,
+            "duration_hours": null,
+            "boundary_status": "Not specified in the protocol"
+          }
+        ],
+        "coverage": null,
+        "label_status": "Candidate refrigerator / freezer; no occupant confirmation or reference check.",
+        "uncertainty": "The physical appliance identity remains uncertain. No probability of a correct name is supplied.",
+        "revision": null,
+        "comfort": null,
+        "bars": [],
+        "boundary_note": "Absolute timestamps were not supplied in the protocol. Relative durations and availability are shown without invented dates."
+      },
+      "questions": [
+        {
+          "id": "primary",
+          "label": "Can it be called the refrigerator with certainty? What further information would help?",
+          "response": "No. Load 12 has recurring 100 W spans, but refrigerator and freezer are both candidates. It is not a confirmed refrigerator. An occupant check or a controlled observation of the appliance could help; confidence alone does not establish identity."
+        },
+        {
+          "id": "followup1",
+          "label": "What could help confirm the name?",
+          "response": "An occupant check or controlled observation could provide more evidence. A confident label without confirmation is still a candidate."
+        },
+        {
+          "id": "followup2",
+          "label": "What does the power pattern tell us?",
+          "response": "Only that load 12 has recurring 100 W spans. This example supplies no span timestamps, duty cycle or energy total that could establish a unique appliance identity."
+        }
+      ],
+      "rubric": [
+        "Says identity is uncertain and refrigeration is only a candidate.",
+        "Suggests suitable extra evidence, such as an occupant check or controlled observation; confidence alone is insufficient."
+      ],
+      "review_status": "Software checked against Appendix A; PI review and final study freeze pending."
+    },
+    {
+      "id": "A4",
+      "set": "A",
+      "task": 4,
+      "title": "A day with missing hours",
+      "prompt": "Is 4.80 kWh the complete day’s measured consumption?",
+      "fictional": true,
+      "source": {
+        "document": "WattDialogue_Participant_Protocol_and_Ethics_Draft.tex",
+        "appendix": "Task sets and frozen scoring rubrics",
+        "row": 4
+      },
+      "evidence": {
+        "facts": [
+          {
+            "label": "Observed energy",
+            "text": "4.80 kWh over the observed 18 hours",
+            "role": "observed_energy",
+            "number": 4.8,
+            "unit": "kWh"
+          },
+          {
+            "label": "Expected window",
+            "text": "24 hours",
+            "role": "interval",
+            "number": 24,
+            "unit": "h"
+          },
+          {
+            "label": "Observed duration",
+            "text": "18 hours",
+            "role": "coverage",
+            "number": 18,
+            "unit": "h"
+          },
+          {
+            "label": "Missing duration",
+            "text": "6 hours",
+            "role": "coverage",
+            "number": 6,
+            "unit": "h"
+          },
+          {
+            "label": "Coverage",
+            "text": "75%",
+            "role": "coverage",
+            "number": 75,
+            "unit": "%"
+          }
+        ],
+        "intervals": [
+          {
+            "name": "Expected day",
+            "start": null,
+            "end": null,
+            "duration_hours": 24,
+            "boundary_status": "Relative 24-hour window only"
+          },
+          {
+            "name": "Observed duration",
+            "start": null,
+            "end": null,
+            "duration_hours": 18,
+            "boundary_status": "Missing-hour positions not supplied"
+          }
+        ],
+        "coverage": {
+          "observed_hours": 18,
+          "expected_hours": 24,
+          "percent": 75,
+          "scope": "day"
+        },
+        "label_status": "No appliance identity is supplied for this task.",
+        "uncertainty": "The complete-day total and the use during the missing six hours are unknown. Measurement source and missing-hour positions are not supplied.",
+        "revision": null,
+        "comfort": null,
+        "bars": [],
+        "boundary_note": "Absolute timestamps were not supplied in the protocol. Relative durations and availability are shown without invented dates."
+      },
+      "questions": [
+        {
+          "id": "primary",
+          "label": "Is 4.80 kWh the complete day’s measured consumption?",
+          "response": "No. The 4.80 kWh value covers the observed 18 hours, which is 75% of the 24-hour window. Six hours are missing. A complete-day total cannot be established from this evidence, so an exact extrapolated total is not justified."
+        },
+        {
+          "id": "followup1",
+          "label": "Can the missing hours be filled exactly?",
+          "response": "No. This example supplies no use for the missing six hours. A complete-day energy total cannot be established from the observed value alone."
+        },
+        {
+          "id": "followup2",
+          "label": "How much of the day is covered?",
+          "response": "18 of 24 hours are observed: 75% coverage. The remaining six hours are missing; their positions in the day are not supplied."
+        }
+      ],
+      "rubric": [
+        "States that the value covers observed 18 hours, not the entire day.",
+        "Says the complete-day total cannot be established; no exact extrapolation is accepted."
+      ],
+      "review_status": "Software checked against Appendix A; PI review and final study freeze pending."
+    },
+    {
+      "id": "A5",
+      "set": "A",
+      "task": 5,
+      "title": "An estimate revised after the block",
+      "prompt": "Does the difference mean additional measured energy? Could the revised value have been shown before the block ended?",
+      "fictional": true,
+      "source": {
+        "document": "WattDialogue_Participant_Protocol_and_Ethics_Draft.tex",
+        "appendix": "Task sets and frozen scoring rubrics",
+        "row": 5
+      },
+      "evidence": {
+        "facts": [
+          {
+            "label": "Component",
+            "text": "Load 7; appliance name not supplied for this independent example.",
+            "role": "component",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Immediate estimate",
+            "text": "3.20 kWh",
+            "role": "immediate_estimate",
+            "number": 3.2,
+            "unit": "kWh"
+          },
+          {
+            "label": "Post-block revised estimate",
+            "text": "3.60 kWh",
+            "role": "revised_estimate",
+            "number": 3.6,
+            "unit": "kWh"
+          },
+          {
+            "label": "Availability",
+            "text": "The revision is available only after the same block ends.",
+            "role": "availability",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Block bounds",
+            "text": "Completed block; start, end and duration are not supplied.",
+            "role": "interval",
+            "number": null,
+            "unit": null
+          }
+        ],
+        "intervals": [
+          {
+            "name": "Same completed block",
+            "start": null,
+            "end": null,
+            "duration_hours": null,
+            "boundary_status": "Not specified in the protocol"
+          }
+        ],
+        "coverage": null,
+        "label_status": "No appliance identity is supplied for this task.",
+        "uncertainty": "These are two estimates for one block. No measured component energy, appliance name or block duration is supplied.",
+        "revision": {
+          "immediate_kwh": 3.2,
+          "revised_kwh": 3.6,
+          "available": "only after the block ends",
+          "same_period": true
+        },
+        "comfort": null,
+        "bars": [],
+        "boundary_note": "Absolute timestamps were not supplied in the protocol. Relative durations and availability are shown without invented dates."
+      },
+      "questions": [
+        {
+          "id": "primary",
+          "label": "Does the difference mean additional measured energy? Could the revised value have been shown before the block ended?",
+          "response": "No. The change from 3.20 to 3.60 kWh revises the estimate for the same block. It is not additional measured energy. The revised value was available only after the block ended and could not have been shown beforehand."
+        },
+        {
+          "id": "followup1",
+          "label": "When was the revised value available?",
+          "response": "Only after the block ended. Before that point, the 3.60 kWh revision was unavailable."
+        },
+        {
+          "id": "followup2",
+          "label": "What changed between the two values?",
+          "response": "The component estimate for the same block changed from 3.20 to 3.60 kWh. Neither value is an additional directly measured energy amount."
+        }
+      ],
+      "rubric": [
+        "Revision changes the estimate for the same period, not additional measured consumption.",
+        "States the revised value was unavailable before the block ended."
+      ],
+      "review_status": "Software checked against Appendix A; PI review and final study freeze pending."
+    },
+    {
+      "id": "A6",
+      "set": "A",
+      "task": 6,
+      "title": "Comfort and possible savings",
+      "prompt": "Which option respects every stated limit? Can a saving be guaranteed?",
+      "fictional": true,
+      "source": {
+        "document": "WattDialogue_Participant_Protocol_and_Ethics_Draft.tex",
+        "appendix": "Task sets and frozen scoring rubrics",
+        "row": 6
+      },
+      "evidence": {
+        "facts": [
+          {
+            "label": "Minimum occupied-room temperature",
+            "text": "20 °C",
+            "role": "comfort",
+            "number": 20,
+            "unit": "°C"
+          },
+          {
+            "label": "Latest laundry start",
+            "text": "21:00",
+            "role": "comfort",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Food-storage constraint",
+            "text": "The refrigerator must remain powered.",
+            "role": "comfort",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Option 1",
+            "text": "Lower occupied rooms to 17 °C.",
+            "role": "option",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Option 2",
+            "text": "Delay optional laundry to 20:00.",
+            "role": "option",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Option 3",
+            "text": "Turn off the refrigerator.",
+            "role": "option",
+            "number": null,
+            "unit": null
+          }
+        ],
+        "intervals": [],
+        "coverage": null,
+        "label_status": "Appliance words are part of an invented comfort card; this is not a NILM identity test.",
+        "uncertainty": "Comfort constraints identify a permitted option. No energy effect, tariff or guaranteed saving is supplied.",
+        "revision": null,
+        "comfort": {
+          "minimum_temperature_c": 20,
+          "latest_start": "21:00",
+          "proposed_delay": "20:00",
+          "must_remain_powered": "refrigerator",
+          "options": [
+            "Lower occupied rooms to 17 °C.",
+            "Delay optional laundry to 20:00.",
+            "Turn off the refrigerator."
+          ]
+        },
+        "bars": [],
+        "boundary_note": "Absolute timestamps were not supplied in the protocol. Relative durations and availability are shown without invented dates."
+      },
+      "questions": [
+        {
+          "id": "primary",
+          "label": "Which option respects every stated limit? Can a saving be guaranteed?",
+          "response": "Delaying optional laundry to 20:00 respects all the stated limits. Lowering occupied rooms to 17 °C violates the 20 °C minimum, and turning off the refrigerator violates the food-storage constraint. An energy or cost saving is not guaranteed because no effect or tariff model is supplied."
+        },
+        {
+          "id": "followup1",
+          "label": "Does delaying the activity guarantee a saving?",
+          "response": "No. This example supplies no energy-effect or tariff model. A permitted schedule change does not establish an energy or cost saving."
+        },
+        {
+          "id": "followup2",
+          "label": "Which choices conflict with comfort or food storage?",
+          "response": "17 °C is below the 20 °C occupied-room minimum. Turning off the refrigerator violates the requirement to keep it powered."
+        }
+      ],
+      "rubric": [
+        "Chooses optional laundry at 20:00 within the latest start.",
+        "Says an energy/cost saving is not guaranteed without an effect/tariff model and preserves all limits."
+      ],
+      "review_status": "Software checked against Appendix A; PI review and final study freeze pending."
+    },
+    {
+      "id": "B1",
+      "set": "B",
+      "task": 1,
+      "title": "Estimated loads and the meter",
+      "prompt": "Which estimated load used most? Is its value directly metered?",
+      "fictional": true,
+      "source": {
+        "document": "WattDialogue_Participant_Protocol_and_Ethics_Draft.tex",
+        "appendix": "Task sets and frozen scoring rubrics",
+        "row": 1
+      },
+      "evidence": {
+        "facts": [
+          {
+            "label": "Window",
+            "text": "Six hours; absolute start and end are not supplied.",
+            "role": "interval",
+            "number": 6,
+            "unit": "h"
+          },
+          {
+            "label": "Load 8 (dishwasher)",
+            "text": "4.20 kWh · component estimate",
+            "role": "component_estimate",
+            "number": 4.2,
+            "unit": "kWh"
+          },
+          {
+            "label": "Load 4",
+            "text": "2.10 kWh · component estimate",
+            "role": "component_estimate",
+            "number": 2.1,
+            "unit": "kWh"
+          },
+          {
+            "label": "Load 12",
+            "text": "0.72 kWh · component estimate",
+            "role": "component_estimate",
+            "number": 0.72,
+            "unit": "kWh"
+          },
+          {
+            "label": "Other components",
+            "text": "0.48 kWh · component estimate",
+            "role": "component_estimate",
+            "number": 0.48,
+            "unit": "kWh"
+          },
+          {
+            "label": "Whole-home meter total",
+            "text": "8.00 kWh · directly metered aggregate",
+            "role": "aggregate_meter",
+            "number": 8.0,
+            "unit": "kWh"
+          },
+          {
+            "label": "Appliance name",
+            "text": "Load 8 is occupant-named dishwasher. Other load names are not supplied.",
+            "role": "identity",
+            "number": null,
+            "unit": null
+          }
+        ],
+        "intervals": [
+          {
+            "name": "Six-hour window",
+            "start": null,
+            "end": null,
+            "duration_hours": 6,
+            "boundary_status": "Relative six-hour duration only"
+          }
+        ],
+        "coverage": null,
+        "label_status": "Occupant-named dishwasher; reference verification not specified. Other components unlabelled.",
+        "uncertainty": "Component energy is estimated. Names are distinct from measured energy. Coverage and reconciliation of the component sum with the meter are not specified.",
+        "revision": null,
+        "comfort": null,
+        "bars": [
+          {
+            "label": "Load 8 (dishwasher)",
+            "value": 4.2,
+            "unit": "kWh",
+            "role": "component_estimate"
+          },
+          {
+            "label": "Load 4",
+            "value": 2.1,
+            "unit": "kWh",
+            "role": "component_estimate"
+          },
+          {
+            "label": "Load 12",
+            "value": 0.72,
+            "unit": "kWh",
+            "role": "component_estimate"
+          },
+          {
+            "label": "Other components",
+            "value": 0.48,
+            "unit": "kWh",
+            "role": "component_estimate"
+          }
+        ],
+        "boundary_note": "Absolute timestamps were not supplied in the protocol. Relative durations and availability are shown without invented dates."
+      },
+      "questions": [
+        {
+          "id": "primary",
+          "label": "Which estimated load used most? Is its value directly metered?",
+          "response": "Load 8, occupant-named dishwasher, has the largest component estimate: 4.20 kWh. That component value is estimated, not directly metered. The 8.00 kWh whole-home meter total is the directly measured aggregate."
+        },
+        {
+          "id": "followup1",
+          "label": "What does the meter total mean?",
+          "response": "The 8.00 kWh total is measured for the whole home. The individual load values are component estimates. The protocol does not require their displayed sum to equal that total."
+        },
+        {
+          "id": "followup2",
+          "label": "What is known about the names?",
+          "response": "An occupant supplied the name dishwasher for load 8. Reference verification is not specified. Names for the remaining components are not supplied."
+        }
+      ],
+      "rubric": [
+        "Identifies load 8 / dishwasher.",
+        "States that the component value is an estimate; only the aggregate is directly metered."
+      ],
+      "review_status": "Software checked against Appendix A; PI review and final study freeze pending."
+    },
+    {
+      "id": "B2",
+      "set": "B",
+      "task": 2,
+      "title": "Comparing complete windows",
+      "prompt": "Did use rise or fall, and by how many kWh?",
+      "fictional": true,
+      "source": {
+        "document": "WattDialogue_Participant_Protocol_and_Ethics_Draft.tex",
+        "appendix": "Task sets and frozen scoring rubrics",
+        "row": 2
+      },
+      "evidence": {
+        "facts": [
+          {
+            "label": "Earlier window",
+            "text": "6.00 kWh · reported energy",
+            "role": "reported_energy",
+            "number": 6.0,
+            "unit": "kWh"
+          },
+          {
+            "label": "Later window",
+            "text": "7.50 kWh · reported energy",
+            "role": "reported_energy",
+            "number": 7.5,
+            "unit": "kWh"
+          },
+          {
+            "label": "Comparison",
+            "text": "Comparable complete 24-hour windows.",
+            "role": "interval",
+            "number": 24,
+            "unit": "h"
+          },
+          {
+            "label": "Measurement source",
+            "text": "The protocol does not specify component versus aggregate measurement.",
+            "role": "provenance",
+            "number": null,
+            "unit": null
+          }
+        ],
+        "intervals": [
+          {
+            "name": "Earlier window",
+            "start": null,
+            "end": null,
+            "duration_hours": 24,
+            "boundary_status": "Earlier complete window; absolute dates absent"
+          },
+          {
+            "name": "Later window",
+            "start": null,
+            "end": null,
+            "duration_hours": 24,
+            "boundary_status": "Later complete window; absolute dates absent"
+          }
+        ],
+        "coverage": {
+          "observed_hours": 24,
+          "expected_hours": 24,
+          "percent": 100,
+          "scope": "each window"
+        },
+        "label_status": "No appliance identity is supplied for this task.",
+        "uncertainty": "The change is calculable from the supplied values. Measurement provenance and the cause of change are not supplied.",
+        "revision": null,
+        "comfort": null,
+        "bars": [
+          {
+            "label": "Earlier window",
+            "value": 6.0,
+            "unit": "kWh",
+            "role": "reported_energy"
+          },
+          {
+            "label": "Later window",
+            "value": 7.5,
+            "unit": "kWh",
+            "role": "reported_energy"
+          }
+        ],
+        "boundary_note": "Absolute timestamps were not supplied in the protocol. Relative durations and availability are shown without invented dates."
+      },
+      "questions": [
+        {
+          "id": "primary",
+          "label": "Did use rise or fall, and by how many kWh?",
+          "response": "Use rose by 1.50 kWh: 7.50 minus 6.00 kWh. Both windows are complete and cover 24 hours. These values show a change, but do not identify its cause."
+        },
+        {
+          "id": "followup1",
+          "label": "How was the difference found?",
+          "response": "Subtract the earlier value from the later value: 7.50 − 6.00 = +1.50 kWh."
+        },
+        {
+          "id": "followup2",
+          "label": "Does the change explain its cause?",
+          "response": "No. The task supplies comparable energy values, without an appliance cause, tariff or saving model."
+        }
+      ],
+      "rubric": [
+        "Identifies an increase.",
+        "Gives +1.50 kWh, accepting a difference within 0.01 kWh."
+      ],
+      "review_status": "Software checked against Appendix A; PI review and final study freeze pending."
+    },
+    {
+      "id": "B3",
+      "set": "B",
+      "task": 3,
+      "title": "A name that remains uncertain",
+      "prompt": "Can it be called the refrigerator with certainty? What further information would help?",
+      "fictional": true,
+      "source": {
+        "document": "WattDialogue_Participant_Protocol_and_Ethics_Draft.tex",
+        "appendix": "Task sets and frozen scoring rubrics",
+        "row": 3
+      },
+      "evidence": {
+        "facts": [
+          {
+            "label": "Component",
+            "text": "Load 12",
+            "role": "component",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Power pattern",
+            "text": "Recurring 120 W spans; span times and durations are not supplied.",
+            "role": "component_power",
+            "number": 120,
+            "unit": "W"
+          },
+          {
+            "label": "Candidate names",
+            "text": "Refrigerator or freezer",
+            "role": "identity",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Occupant confirmation",
+            "text": "None",
+            "role": "identity",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Reference check",
+            "text": "None",
+            "role": "identity",
+            "number": null,
+            "unit": null
+          }
+        ],
+        "intervals": [
+          {
+            "name": "Recurring spans",
+            "start": null,
+            "end": null,
+            "duration_hours": null,
+            "boundary_status": "Not specified in the protocol"
+          }
+        ],
+        "coverage": null,
+        "label_status": "Candidate refrigerator / freezer; no occupant confirmation or reference check.",
+        "uncertainty": "The physical appliance identity remains uncertain. No probability of a correct name is supplied.",
+        "revision": null,
+        "comfort": null,
+        "bars": [],
+        "boundary_note": "Absolute timestamps were not supplied in the protocol. Relative durations and availability are shown without invented dates."
+      },
+      "questions": [
+        {
+          "id": "primary",
+          "label": "Can it be called the refrigerator with certainty? What further information would help?",
+          "response": "No. Load 12 has recurring 120 W spans, but refrigerator and freezer are both candidates. It is not a confirmed refrigerator. An occupant check or a controlled observation of the appliance could help; confidence alone does not establish identity."
+        },
+        {
+          "id": "followup1",
+          "label": "What could help confirm the name?",
+          "response": "An occupant check or controlled observation could provide more evidence. A confident label without confirmation is still a candidate."
+        },
+        {
+          "id": "followup2",
+          "label": "What does the power pattern tell us?",
+          "response": "Only that load 12 has recurring 120 W spans. This example supplies no span timestamps, duty cycle or energy total that could establish a unique appliance identity."
+        }
+      ],
+      "rubric": [
+        "Says identity is uncertain and refrigeration is only a candidate.",
+        "Suggests suitable extra evidence, such as an occupant check or controlled observation; confidence alone is insufficient."
+      ],
+      "review_status": "Software checked against Appendix A; PI review and final study freeze pending."
+    },
+    {
+      "id": "B4",
+      "set": "B",
+      "task": 4,
+      "title": "A day with missing hours",
+      "prompt": "Is 6.30 kWh the complete day’s measured consumption?",
+      "fictional": true,
+      "source": {
+        "document": "WattDialogue_Participant_Protocol_and_Ethics_Draft.tex",
+        "appendix": "Task sets and frozen scoring rubrics",
+        "row": 4
+      },
+      "evidence": {
+        "facts": [
+          {
+            "label": "Observed energy",
+            "text": "6.30 kWh over the observed 18 hours",
+            "role": "observed_energy",
+            "number": 6.3,
+            "unit": "kWh"
+          },
+          {
+            "label": "Expected window",
+            "text": "24 hours",
+            "role": "interval",
+            "number": 24,
+            "unit": "h"
+          },
+          {
+            "label": "Observed duration",
+            "text": "18 hours",
+            "role": "coverage",
+            "number": 18,
+            "unit": "h"
+          },
+          {
+            "label": "Missing duration",
+            "text": "6 hours",
+            "role": "coverage",
+            "number": 6,
+            "unit": "h"
+          },
+          {
+            "label": "Coverage",
+            "text": "75%",
+            "role": "coverage",
+            "number": 75,
+            "unit": "%"
+          }
+        ],
+        "intervals": [
+          {
+            "name": "Expected day",
+            "start": null,
+            "end": null,
+            "duration_hours": 24,
+            "boundary_status": "Relative 24-hour window only"
+          },
+          {
+            "name": "Observed duration",
+            "start": null,
+            "end": null,
+            "duration_hours": 18,
+            "boundary_status": "Missing-hour positions not supplied"
+          }
+        ],
+        "coverage": {
+          "observed_hours": 18,
+          "expected_hours": 24,
+          "percent": 75,
+          "scope": "day"
+        },
+        "label_status": "No appliance identity is supplied for this task.",
+        "uncertainty": "The complete-day total and the use during the missing six hours are unknown. Measurement source and missing-hour positions are not supplied.",
+        "revision": null,
+        "comfort": null,
+        "bars": [],
+        "boundary_note": "Absolute timestamps were not supplied in the protocol. Relative durations and availability are shown without invented dates."
+      },
+      "questions": [
+        {
+          "id": "primary",
+          "label": "Is 6.30 kWh the complete day’s measured consumption?",
+          "response": "No. The 6.30 kWh value covers the observed 18 hours, which is 75% of the 24-hour window. Six hours are missing. A complete-day total cannot be established from this evidence, so an exact extrapolated total is not justified."
+        },
+        {
+          "id": "followup1",
+          "label": "Can the missing hours be filled exactly?",
+          "response": "No. This example supplies no use for the missing six hours. A complete-day energy total cannot be established from the observed value alone."
+        },
+        {
+          "id": "followup2",
+          "label": "How much of the day is covered?",
+          "response": "18 of 24 hours are observed: 75% coverage. The remaining six hours are missing; their positions in the day are not supplied."
+        }
+      ],
+      "rubric": [
+        "States that the value covers observed 18 hours, not the entire day.",
+        "Says the complete-day total cannot be established; no exact extrapolation is accepted."
+      ],
+      "review_status": "Software checked against Appendix A; PI review and final study freeze pending."
+    },
+    {
+      "id": "B5",
+      "set": "B",
+      "task": 5,
+      "title": "An estimate revised after the block",
+      "prompt": "Does the difference mean additional measured energy? Could the revised value have been shown before the block ended?",
+      "fictional": true,
+      "source": {
+        "document": "WattDialogue_Participant_Protocol_and_Ethics_Draft.tex",
+        "appendix": "Task sets and frozen scoring rubrics",
+        "row": 5
+      },
+      "evidence": {
+        "facts": [
+          {
+            "label": "Component",
+            "text": "Load 8; appliance name not supplied for this independent example.",
+            "role": "component",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Immediate estimate",
+            "text": "2.40 kWh",
+            "role": "immediate_estimate",
+            "number": 2.4,
+            "unit": "kWh"
+          },
+          {
+            "label": "Post-block revised estimate",
+            "text": "2.80 kWh",
+            "role": "revised_estimate",
+            "number": 2.8,
+            "unit": "kWh"
+          },
+          {
+            "label": "Availability",
+            "text": "The revision is available only after the same block ends.",
+            "role": "availability",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Block bounds",
+            "text": "Completed block; start, end and duration are not supplied.",
+            "role": "interval",
+            "number": null,
+            "unit": null
+          }
+        ],
+        "intervals": [
+          {
+            "name": "Same completed block",
+            "start": null,
+            "end": null,
+            "duration_hours": null,
+            "boundary_status": "Not specified in the protocol"
+          }
+        ],
+        "coverage": null,
+        "label_status": "No appliance identity is supplied for this task.",
+        "uncertainty": "These are two estimates for one block. No measured component energy, appliance name or block duration is supplied.",
+        "revision": {
+          "immediate_kwh": 2.4,
+          "revised_kwh": 2.8,
+          "available": "only after the block ends",
+          "same_period": true
+        },
+        "comfort": null,
+        "bars": [],
+        "boundary_note": "Absolute timestamps were not supplied in the protocol. Relative durations and availability are shown without invented dates."
+      },
+      "questions": [
+        {
+          "id": "primary",
+          "label": "Does the difference mean additional measured energy? Could the revised value have been shown before the block ended?",
+          "response": "No. The change from 2.40 to 2.80 kWh revises the estimate for the same block. It is not additional measured energy. The revised value was available only after the block ended and could not have been shown beforehand."
+        },
+        {
+          "id": "followup1",
+          "label": "When was the revised value available?",
+          "response": "Only after the block ended. Before that point, the 2.80 kWh revision was unavailable."
+        },
+        {
+          "id": "followup2",
+          "label": "What changed between the two values?",
+          "response": "The component estimate for the same block changed from 2.40 to 2.80 kWh. Neither value is an additional directly measured energy amount."
+        }
+      ],
+      "rubric": [
+        "Revision changes the estimate for the same period, not additional measured consumption.",
+        "States the revised value was unavailable before the block ended."
+      ],
+      "review_status": "Software checked against Appendix A; PI review and final study freeze pending."
+    },
+    {
+      "id": "B6",
+      "set": "B",
+      "task": 6,
+      "title": "Comfort and possible savings",
+      "prompt": "Which option respects every stated limit? Can a saving be guaranteed?",
+      "fictional": true,
+      "source": {
+        "document": "WattDialogue_Participant_Protocol_and_Ethics_Draft.tex",
+        "appendix": "Task sets and frozen scoring rubrics",
+        "row": 6
+      },
+      "evidence": {
+        "facts": [
+          {
+            "label": "Minimum occupied-room temperature",
+            "text": "21 °C",
+            "role": "comfort",
+            "number": 21,
+            "unit": "°C"
+          },
+          {
+            "label": "Latest dishwashing start",
+            "text": "22:00",
+            "role": "comfort",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Food-storage constraint",
+            "text": "The freezer must remain powered.",
+            "role": "comfort",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Option 1",
+            "text": "Lower occupied rooms to 18 °C.",
+            "role": "option",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Option 2",
+            "text": "Delay optional dishwashing to 21:00.",
+            "role": "option",
+            "number": null,
+            "unit": null
+          },
+          {
+            "label": "Option 3",
+            "text": "Turn off the freezer.",
+            "role": "option",
+            "number": null,
+            "unit": null
+          }
+        ],
+        "intervals": [],
+        "coverage": null,
+        "label_status": "Appliance words are part of an invented comfort card; this is not a NILM identity test.",
+        "uncertainty": "Comfort constraints identify a permitted option. No energy effect, tariff or guaranteed saving is supplied.",
+        "revision": null,
+        "comfort": {
+          "minimum_temperature_c": 21,
+          "latest_start": "22:00",
+          "proposed_delay": "21:00",
+          "must_remain_powered": "freezer",
+          "options": [
+            "Lower occupied rooms to 18 °C.",
+            "Delay optional dishwashing to 21:00.",
+            "Turn off the freezer."
+          ]
+        },
+        "bars": [],
+        "boundary_note": "Absolute timestamps were not supplied in the protocol. Relative durations and availability are shown without invented dates."
+      },
+      "questions": [
+        {
+          "id": "primary",
+          "label": "Which option respects every stated limit? Can a saving be guaranteed?",
+          "response": "Delaying optional dishwashing to 21:00 respects all the stated limits. Lowering occupied rooms to 18 °C violates the 21 °C minimum, and turning off the freezer violates the food-storage constraint. An energy or cost saving is not guaranteed because no effect or tariff model is supplied."
+        },
+        {
+          "id": "followup1",
+          "label": "Does delaying the activity guarantee a saving?",
+          "response": "No. This example supplies no energy-effect or tariff model. A permitted schedule change does not establish an energy or cost saving."
+        },
+        {
+          "id": "followup2",
+          "label": "Which choices conflict with comfort or food storage?",
+          "response": "18 °C is below the 21 °C occupied-room minimum. Turning off the freezer violates the requirement to keep it powered."
+        }
+      ],
+      "rubric": [
+        "Chooses optional dishwashing at 21:00 within the latest start.",
+        "Says an energy/cost saving is not guaranteed without an effect/tariff model and preserves all limits."
+      ],
+      "review_status": "Software checked against Appendix A; PI review and final study freeze pending."
+    }
+  ],
+  "review_decisions": [
+    "No absolute dates/times or unprovided block durations are invented; interval bounds remain null.",
+    "Task 1 retains the exact component estimates and aggregate meter totals; no closed energy balance is asserted.",
+    "Task 2 energy measurement provenance is not supplied and is not relabelled as directly metered.",
+    "Every task is its own invented evidence card, not one continuous household timeline.",
+    "Separate P1/P2 orientation and exact help are prepared in orientation-and-help.json; PI review and approval remain required.",
+    "The assigned sequence is a REVIEW artifact and does not establish a final participant-study freeze."
+  ]
+}

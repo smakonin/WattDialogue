@@ -13,4 +13,6 @@ The repository remains private during development. The paper's availability stat
 - [ ] Verify the paper's repository link, version and public availability before submission.
 - [ ] Change repository visibility to public when the author decides it is ready to launch.
 
-The working manuscript, participant protocol and private research archives are maintained separately. The repository does not contain private keys, original recordings, the unpublished patent document or a completed occupant study.
+The manuscript and private research archives are maintained separately. The draft participant protocol and synthetic study website are included under `study/` for review; no study deployment or participant collection is enabled. The repository does not contain private keys, original recordings, the unpublished patent document or a completed occupant study.
+
+- [ ] Before any study launch, review the included consent/protocol, complete the hosting and collection design, and obtain the required institutional approval.

@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "scope": "Pure offline logic; invented researcher fixtures, no participant evidence",
+  "assertions": 569,
+  "allocations_checked": 4,
+  "scheduled_tasks_checked": 48,
+  "network_calls": 0,
+  "participant_records": 0
+}
