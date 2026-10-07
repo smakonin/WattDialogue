@@ -2,7 +2,21 @@
 
 A conversational bridge from unsupervised NILM results to household energy understanding.
 
-This repository contains the replay bridge, independent question benchmark and in-home display prototype accompanying the IEEE PES GM 2027 manuscript. **The repository is private while the demo is being prepared. Public release is planned when it is ready.**
+This repository contains the replay bridge, independent question benchmark and in-home display prototype accompanying the IEEE PES GM 2027 manuscript. **The repository is public under GPL-3.0-only. The paper has been submitted; publication and acceptance are not claimed.**
+
+## Website
+
+Visit **[smakonin.github.io/WattDialogue](https://smakonin.github.io/WattDialogue/)**
+for the project page, or **[open the interactive study preview](https://smakonin.github.io/WattDialogue/study/)**.
+The preview runs entirely in the browser with invented examples and prepared
+answers. It makes no OpenAI calls and has no participant response collector.
+Live energy queries and optional OpenAI dialogue require the locally run Python
+demo below. No API keys are published or required by GitHub Pages.
+
+GitHub Actions publishes only the allowlisted static files using
+`scripts/build_pages.py`; repository configuration, protocol source and generated
+research records are not part of the Pages artifact. GitHub hosting may retain
+access logs, so the preview does not promise anonymous hosting.
 
 ## Run the demo
 
@@ -124,7 +138,7 @@ python3 -m http.server 8791 --bind 127.0.0.1 --directory study/offline-display
 Then open **http://127.0.0.1:8791**. This is separate from the replay demo on
 port 8767. The study flow has prepared responses and simulated submission; it
 has no live AI or response collector and is not open for participant collection.
-Adding it to the private repository does not deploy it or enable GitHub Pages.
+The browser preview is also published on GitHub Pages; this does not enable participant collection.
 No participant results belong in Git.
 
 Run its no-key checks from the repository root:

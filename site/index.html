@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="WattDialogue connects residential energy evidence with household questions. Explore an interactive research preview and the open-source replay demo.">
+<title>WattDialogue · Household energy, explained</title>
+<style>
+:root{color-scheme:light;--ink:#173438;--muted:#496467;--accent:#17695f;--paper:#f5f8f4}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:18px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:980px;margin:auto;padding:44px 24px 32px}header{display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:16px}header strong{font-size:24px}a{color:var(--accent);text-underline-offset:4px}a:focus-visible{outline:3px solid #ce862e;outline-offset:5px}.hero{margin:68px 0 44px;max-width:820px}.eyebrow{font-size:14px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}h1{font-size:clamp(36px,6vw,62px);line-height:1.13;letter-spacing:-.035em;margin:18px 0 24px}h2{font-size:26px;line-height:1.3;margin:0 0 16px}p{margin:0 0 20px}.intro{font-size:22px;max-width:710px}.cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}.card{background:white;border:1px solid #d7e2db;border-radius:16px;padding:30px;display:flex;flex-direction:column}.card p{color:var(--muted)}.button{display:inline-block;align-self:flex-start;border:2px solid var(--accent);border-radius:8px;padding:12px 20px;text-decoration:none;font-weight:650;background:var(--accent);color:white;margin-top:auto}.secondary{color:var(--accent);background:white}.note{font-size:15px;color:var(--muted);margin-top:18px!important}.context{margin-top:38px;padding:24px 0;border-top:1px solid #d7e2db;font-size:16px;color:var(--muted)}footer{font-size:14px;color:var(--muted);padding:20px 0}@media(max-width:680px){.cards{grid-template-columns:1fr}.hero{margin-top:44px}.card{padding:24px}.intro{font-size:20px}header{align-items:flex-start}}
+</style>
+</head>
+<body>
+<main>
+<header><strong>WattDialogue</strong><a href="https://github.com/smakonin/WattDialogue">Source on GitHub</a></header>
+<section class="hero" aria-labelledby="title">
+<div class="eyebrow">Residential energy research</div>
+<h1 id="title">Household energy,<br>explained through questions.</h1>
+<p class="intro">WattDialogue connects unsupervised load-monitoring results with questions about energy use, appliance names and comfort. The system keeps measurements, estimates and uncertain names distinct.</p>
+</section>
+<div class="cards">
+<section class="card" aria-labelledby="preview-title">
+<h2 id="preview-title">Try the interactive preview</h2>
+<p>Explore a readable dashboard and prepared dialogue using the same invented household examples. See how each format explains consumption, missing readings, uncertain appliance names and comfort limits.</p>
+<a class="button" href="study/">Open study preview</a>
+<p class="note">Research preview with invented responses only. No participant recruitment or response collection. Answers remain in the page; submission is simulated.</p>
+</section>
+<section class="card" aria-labelledby="demo-title">
+<h2 id="demo-title">Run the energy-query demo</h2>
+<p>The open-source replay demo answers energy questions using calculation tools. It runs locally with generated data. OpenAI dialogue is optional and uses keys kept on your own server.</p>
+<a class="button secondary" href="https://github.com/smakonin/WattDialogue#run-the-demo">Get the runnable demo</a>
+<p class="note">The browser preview uses prepared answers. Live OpenAI dialogue is available through the separately run demo.</p>
+</section>
+</div>
+<section class="context" aria-label="About this research">
+<p>Developed by Stephen Makonin, Simon Fraser University. The accompanying paper was submitted to IEEE PES General Meeting 2027. The engineering tests do not establish appliance-name accuracy, occupant understanding or energy savings.</p>
+<p>The proposed utility-supplied display would let households participate without buying their own computer, smartphone or Internet subscription. This access model still needs field evaluation.</p>
+<p>No API key or household recording is needed for this preview. GitHub may retain identifying access logs; this site does not promise anonymous hosting. <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub hosting information</a>.</p>
+</section>
+<footer>Source code: <a href="https://github.com/smakonin/WattDialogue/blob/main/LICENSE">GNU GPL version 3</a> · <a href="https://github.com/smakonin/WattDialogue/tree/main/benchmark">Benchmarks and methods</a></footer>
+</main>
+</body>
+</html>
