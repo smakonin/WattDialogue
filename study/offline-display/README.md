@@ -1,6 +1,6 @@
 # WattDialogue anonymous website study REVIEW
 
-This self-contained local preview uses invented researcher-testing responses only. It is available as a public research preview at [WattDialogue/study](https://smakonin.github.io/WattDialogue/study/), but is not approved or open for participant collection. The proposed study is unpaid, uses volunteers’ own devices and connection, and aims for an anonymous research dataset. Institutional hosting and logging have not been selected or verified.
+This self-contained local preview uses invented researcher-testing responses only. It is available as a public research preview at [WattDialogue/study](https://makonin.com/WattDialogue/study/), but is not approved or open for participant collection. The proposed study is unpaid, uses volunteers’ own devices and connection, and aims for an anonymous research dataset. Institutional hosting and logging have not been selected or verified.
 
 Open [index.html](index.html) in a current browser, or serve just this directory with `python3 -m http.server 8791 --bind 127.0.0.1` and open [127.0.0.1:8791](http://127.0.0.1:8791/). Stop the preview server with Ctrl+C. Do not serve the repository root. The existing replay demo on port 8767 is separate. The file contains all scripts, styles and evidence and can be opened without Internet access.
 

@@ -6,13 +6,15 @@ This repository contains the replay bridge, independent question benchmark and i
 
 ## Website
 
-Visit **[smakonin.github.io/WattDialogue](https://smakonin.github.io/WattDialogue/)**
-for the project page, or **[open the interactive study preview](https://smakonin.github.io/WattDialogue/study/)**.
+Visit **[makonin.com/WattDialogue](https://makonin.com/WattDialogue/)**
+for the project page, or **[open the interactive study preview](https://makonin.com/WattDialogue/study/)**.
 The preview runs entirely in the browser with invented examples and prepared
 answers. It makes no OpenAI calls and has no participant response collector.
 Live energy queries and optional OpenAI dialogue require the locally run Python
 demo below. No API keys are published or required by GitHub Pages.
 
+The site inherits the account's existing `makonin.com` Pages domain; the
+`smakonin.github.io/WattDialogue/` address redirects there. HTTPS is enforced.
 GitHub Actions publishes only the allowlisted static files using
 `scripts/build_pages.py`; repository configuration, protocol source and generated
 research records are not part of the Pages artifact. GitHub hosting may retain
